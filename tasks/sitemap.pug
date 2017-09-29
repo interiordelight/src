@@ -1,0 +1,28 @@
+doctype xml
+urlset(xmlns="http://www.sitemaps.org/schemas/sitemap/0.9")
+
+  url
+    loc= root
+    lastmod= now
+    changefreq weekly
+    priority= 0.9
+
+  each page in ['services', 'contact', 'terms-and-conditions', 'cookie-policy']
+    url
+      loc #{root}/#{page}
+      lastmod= now
+      changefreq weekly
+      priority= 0.5
+
+  url
+    loc #{root}/portfolio
+    lastmod= now
+    changefreq weekly
+    priority= 0.8
+
+  each project in projects
+    url
+      loc #{root}/portfolio/#{project}
+      lastmod= now
+      changefreq weekly
+      priority= 0.6

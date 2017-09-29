@@ -1,0 +1,44 @@
+{
+  "name": "interiordelight.ro",
+  "version": "3.0.0",
+  "description": "Next.js application for interiordelight.ro",
+  "main": "index.js",
+  "license": "UNLICENSED",
+  "scripts": {
+    "gen-pic-thumbnails": "node tasks/gen-pic-thumbnails.js",
+    "build-projects-json": "node tasks/build-projects-json.js",
+    "dev:projects": "yarn build-projects-json && chokidar projects-md -c 'yarn build-projects-json'",
+    "dev:app": "node dev.js",
+    "dev": "run-p dev:*",
+    "build": "yarn build-projects-json && next build && next export && node tasks/build-seo-files.js && touch out/.nojekyll && echo 'www.interiordelight.ro' > out/CNAME"
+  },
+  "dependencies": {
+    "classnames": "^2.2.5",
+    "eventemitter3": "^2.0.3",
+    "express": "^4.16.0",
+    "front-matter": "^2.2.0",
+    "lazysizes": "^4.0.0-rc3",
+    "lodash.samplesize": "^4.2.0",
+    "lodash.throttle": "^4.1.1",
+    "lory.js": "^2.3.3",
+    "marked": "^0.3.6",
+    "mkdirp": "^0.5.1",
+    "next": "^3.2.2",
+    "prop-types": "^15.6.0",
+    "pug": "^2.0.0-rc.4",
+    "react": "^15.6.2",
+    "react-dom": "^15.6.2",
+    "rimraf": "^2.6.2",
+    "underscore.string": "^3.3.4"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.0.1",
+    "chokidar-cli": "^1.2.0",
+    "eslint": "^4.7.2",
+    "eslint-config-airbnb": "^15.1.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^5.1.1",
+    "eslint-plugin-react": "^7.4.0",
+    "npm-run-all": "^4.1.1"
+  }
+}
