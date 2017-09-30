@@ -4,7 +4,7 @@ import Head from 'next/head';
 import Layout from '../components/Layout';
 import Hero from '../components/Hero';
 import ContactLink from '../components/ContactLink';
-import { colors } from '../config';
+import { domainUrl, colors } from '../config';
 
 export default () => (
   <Layout title="Contact" activeMenuItem="contact" showFooterBanners>
@@ -12,7 +12,7 @@ export default () => (
       <meta name="description" content="Contact me if you're looking for professional interior design, decoration, visualization, 3D modeling, rendering and post-processing" />
       <meta name="keywords" content="interior design, 3d, modeling, rendering, post processing, rhino, vray, maxwell, photoshop, contact" />
       <meta property="og:title" content="Contact Irinel-Ramona Florescu, CG Artist and Architect" />
-      <meta property="og:image" content="http://www.interiordelight.ro/static/images/irinel-ramona-florescu.jpg" />
+      <meta property="og:image" content={`${domainUrl}/static/images/irinel-ramona-florescu.jpg`} />
       <meta property="og:description" content="If you're looking for professional interior design and visualization, you're in the right place." />
       <meta property="og:type" content="profile" />
       <meta property="fb:profile_id" content="100003892666191" />

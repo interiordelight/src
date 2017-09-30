@@ -4,7 +4,7 @@ import Head from 'next/head';
 
 import Header from './Header';
 import Footer from './Footer';
-import { colors, iconLinks } from '../config';
+import { domain, domainUrl, colors, iconLinks } from '../config';
 
 if (global.window && !global.window.lazySizes) {
   // eslint-disable-next-line global-require
@@ -22,12 +22,12 @@ const Layout = ({ title, schemaType, activeMenuItem, showFooterBanners, children
       <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
       {iconLinks}
       <link href="https://fonts.googleapis.com/css?family=Open+Sans|Poiret+One" rel="stylesheet" />
-      <title>{title} – interiordelight.ro</title>
+      <title>{title} – {domain}</title>
       <meta name="description" content="Professional interior design, decoration, visualization, 3D modeling, rendering and post-processing" />
       <meta name="keywords" content="interior design, 3d, modeling, rendering, post processing, rhino, vray, maxwell, photoshop" />
-      <meta property="og:site_name" content="interiordelight.ro" />
+      <meta property="og:site_name" content={domain} />
       <meta property="og:title" content="Interior design and visualization done right" />
-      <meta property="og:image" content="http://www.interiordelight.ro/static/images/interiordelight-og-image.jpg" />
+      <meta property="og:image" content={`${domainUrl}/static/images/interiordelight-og-image.jpg`} />
       <meta property="og:description" content="Professional interior design, decoration, visualization, 3D modeling, rendering and post-processing" />
     </Head>
     <Header activeMenuItem={activeMenuItem} />

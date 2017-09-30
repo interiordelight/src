@@ -2,6 +2,8 @@ import React from 'react';
 
 export const brand = 'Interior Delight';
 export const tagline = 'Interior design and visualization done right.';
+export const domain = 'interiordelight.ro';
+export const domainUrl = `http://www.${domain}`;
 
 export const colors = {
   blue: '#00849b',

@@ -16,7 +16,7 @@ import CallToAction from '../components/CallToAction';
 import PictureGallery from '../components/PictureGallery';
 import ProjectCards from '../components/ProjectCards';
 import projects from '../projects-json/index.json';
-import { colors } from '../config';
+import { domainUrl, colors } from '../config';
 
 const randomKey = () => `${Date.now()}${Math.random()}`;
 
@@ -75,9 +75,9 @@ class Project extends Component {
           />
           <div className="description">{description}</div>
           <ProjectShareLinks
-            url={`http://www.interiordelight.ro/portfolio/${slug}/`}
+            url={`${domainUrl}/portfolio/${slug}/`}
             title={title}
-            absoluteCoverUrl={`http://www.interiordelight.ro/static/pics/o/${slug}-cover.jpg`}
+            absoluteCoverUrl={`${domainUrl}/static/pics/o/${slug}-cover.jpg`}
             description={description}
           />
           <ProjectCover

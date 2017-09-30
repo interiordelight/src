@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import ShareLink from './ShareLink';
+import { domain, domainUrl } from '../config';
 
 const ProjectShareLinks = ({ url, title, absoluteCoverUrl, description }) => (
   <div className="container">
@@ -26,7 +27,7 @@ const ProjectShareLinks = ({ url, title, absoluteCoverUrl, description }) => (
       params={{
         url,
         media: absoluteCoverUrl,
-        description: `${title} - project by interiordelight.ro. ${description}`
+        description: `${title} - project by ${domain}. ${description}`
       }}
     />
     <ShareLink
@@ -37,7 +38,7 @@ const ProjectShareLinks = ({ url, title, absoluteCoverUrl, description }) => (
         url,
         title,
         summary: description,
-        source: 'http://www.interiordelight.ro'
+        source: domainUrl
       }}
     />
     <style jsx>{`

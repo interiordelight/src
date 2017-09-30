@@ -2,23 +2,25 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Head from 'next/head';
 
+import { domain, domainUrl } from '../config';
+
 const renderOgSeeAlsoProject = project => (
   <meta
     key={project.index}
     property="og:see_also"
-    content={`http://www.interiordelight.ro/portfolio/${project.slug}/`}
+    content={`${domainUrl}/portfolio/${project.slug}/`}
   />
 );
 
 const ProjectHead = ({ slug, title, description, otherProjects }) => {
-  const absoluteCoverUrl = `http://www.interiordelight.ro/static/pics/o/${slug}-cover.jpg`;
+  const absoluteCoverUrl = `${domainUrl}/static/pics/o/${slug}-cover.jpg`;
   return (
     <Head>
       <meta name="description" content={`Professional interior design and visualization. ${description}`} />
       <meta name="keywords" content="interior design, 3d, modeling, rendering, post processing, rhino, vray, maxwell, photoshop, portfolio" />
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:creator" content="iriflorescu" />
-      <meta name="twitter:domain" content="www.interiordelight.ro" />
+      <meta name="twitter:domain" content={`www.${domain}`} />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={absoluteCoverUrl} />

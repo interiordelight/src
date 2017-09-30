@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import ShareLink from './ShareLink';
+import { domain, domainUrl } from '../config';
 
 const PictureGalleryFooter = ({ projectSlug, projectTitle, currentSlideSrc }) => (
   <div className="container">
@@ -10,9 +11,9 @@ const PictureGalleryFooter = ({ projectSlug, projectTitle, currentSlideSrc }) =>
       type="pinterest"
       title="Pin this picture"
       params={{
-        url: `http://www.interiordelight.ro/portfolio/${projectSlug}/`,
-        media: `http://www.interiordelight.ro/static/pics/o/${currentSlideSrc}`,
-        description: `Picture from ${projectTitle} project by interiordelight.ro.`
+        url: `${domainUrl}/portfolio/${projectSlug}/`,
+        media: `${domainUrl}/static/pics/o/${currentSlideSrc}`,
+        description: `Picture from ${projectTitle} project by ${domain}.`
       }}
     />
     <style jsx>{`

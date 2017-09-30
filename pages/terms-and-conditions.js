@@ -4,6 +4,7 @@ import Layout from '../components/Layout';
 import TermsAndConditionsHead from '../components/TermsAndConditionsHead';
 import Content from '../components/Content';
 import Title from '../components/Title';
+import { domain } from '../config';
 
 const title = 'Terms & Conditions';
 
@@ -15,14 +16,14 @@ export default () => (
       <p>Before using this site, you should read these Terms carefully, as well as our <a href="/cookie-policy">Cookie Policy</a>.</p>
 
       <h4>About this website</h4>
-      <p>The information contained on the site is for information purposes only. You cannot purchase products or services from <a href="/" title="interiordelight.ro">interiordelight.ro</a> directly.</p>
+      <p>The information contained on the site is for information purposes only. You cannot purchase products or services from <a href="/" title={domain}>{domain}</a> directly.</p>
 
       <h4>The provision of services</h4>
-      <p>If you want to know more about any of the products and services described on the site, we ask you to visit the <a href="/services.html">services</a> page or <a href="/contact.html">contact us</a> directly. Some of the products and services described on <a href="/" title="interiordelight.ro">interiordelight.ro</a> may not be available in your location.</p>
+      <p>If you want to know more about any of the products and services described on the site, we ask you to visit the <a href="/services.html">services</a> page or <a href="/contact.html">contact us</a> directly. Some of the products and services described on <a href="/" title={domain}>{domain}</a> may not be available in your location.</p>
       <p>We reserve the right to make the final determination on whether or not you are eligible for any particular  service.</p>
 
       <h4>Changes</h4>
-      <p>The information, material and content provided in the pages of <a href="/" title="interiordelight.ro">interiordelight.ro</a> may be changed at any time without notice. Changes may be made to these Terms and Conditions by us at any time without notice to you by updating the posting of the Terms and Conditions.</p>
+      <p>The information, material and content provided in the pages of <a href="/" title={domain}>{domain}</a> may be changed at any time without notice. Changes may be made to these Terms and Conditions by us at any time without notice to you by updating the posting of the Terms and Conditions.</p>
 
       <h4>Data protection and privacy policies</h4>
       <p>We are fully committed to protecting your privacy. None of the information gathered in connection with your use of this website can be traced to an individual.</p>
@@ -53,13 +54,13 @@ export default () => (
       <p>The terms are governed by and interpreted in accordance with the laws of Romania and the Romanian courts will have exclusive jurisdiction in respect of any dispute, which may arise.</p>
 
       <h4>Social media</h4>
-      <p>The owners of <a href="/" title="interiordelight.ro">interiordelight.ro</a> and other third parties may from time to time operate channels, pages and accounts on some social media sites to inform, assist and engage with customers and other users. Each operator of such a channel, page or account is responsible for such channel, page or account in accordance with the terms of use displayed on or linked from that channel, page or account. To see the full terms of use relating to our social media channels, pages and accounts please visit the relevant channel, page or account. In addition, please note the following general terms which relate to our social media channels, pages and accounts:</p>
+      <p>The owners of <a href="/" title={domain}>{domain}</a> and other third parties may from time to time operate channels, pages and accounts on some social media sites to inform, assist and engage with customers and other users. Each operator of such a channel, page or account is responsible for such channel, page or account in accordance with the terms of use displayed on or linked from that channel, page or account. To see the full terms of use relating to our social media channels, pages and accounts please visit the relevant channel, page or account. In addition, please note the following general terms which relate to our social media channels, pages and accounts:</p>
       <ul>
-        <li>We may monitor and record comments and posts made on these channels about <a href="/" title="interiordelight.ro">interiordelight.ro</a> so that we can improve our services.</li>
+        <li>We may monitor and record comments and posts made on these channels about <a href="/" title={domain}>{domain}</a> so that we can improve our services.</li>
         <li>We are not responsible for any information posted on those sites other than information we have posted ourselves. We do not endorse the social media sites themselves, or any information posted on them by third parties or other users.</li>
-        <li>The operation of such social media channels, pages and accounts does not constitute an offer of any products or services provided by <a href="/" title="interiordelight.ro">interiordelight.ro</a>. We don't give professional advice via social media sites.</li>
+        <li>The operation of such social media channels, pages and accounts does not constitute an offer of any products or services provided by <a href="/" title={domain}>{domain}</a>. We don't give professional advice via social media sites.</li>
         <li>When you engage with us via social media your personal data may be stored on that social media site's servers, which are outside our control and may be in the US or elsewhere inside or outside the EU. Any information posted to such sites may be accessed and read by the general public. It is not an appropriate forum to discuss customers' products or financial arrangements. We will not ask you to share personal, account or security information via social media sites, and you should not post such information on those channels.</li>
-        <li>We regularly update and monitor our social media accounts and welcome feedback and ideas submitted via these channels. We may from time to time join the conversation on our social media channels, pages and accounts, however cannot guarantee to read or reply to all messages sent to official <a href="/" title="interiordelight.ro">interiordelight.ro</a> social media accounts.</li>
+        <li>We regularly update and monitor our social media accounts and welcome feedback and ideas submitted via these channels. We may from time to time join the conversation on our social media channels, pages and accounts, however cannot guarantee to read or reply to all messages sent to official <a href="/" title={domain}>{domain}</a> social media accounts.</li>
       </ul>
     </Content>
   </Layout>

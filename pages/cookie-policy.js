@@ -4,6 +4,7 @@ import Layout from '../components/Layout';
 import CookiePolicyHead from '../components/CookiePolicyHead';
 import Content from '../components/Content';
 import Title from '../components/Title';
+import { domain } from '../config';
 
 const title = 'Cookie Policy';
 
@@ -15,8 +16,8 @@ export default () => (
       <p>Before using this site, you should read this Policy carefully, as well as our <a href="/terms-and-conditions">Terms and Conditions</a>.</p>
 
       <h4>Understanding how and why we use cookies</h4>
-      <p>We use cookies on <a href="/" title="interiordelight.ro">interiordelight.ro</a> to create the most effective website possible for our users. Among other things, the cookies we use allow us to improve your experience when using our website and to ensure the website performs as you expect it to.</p>
-      <p>This cookie policy explains what cookies are, how we use them on <a href="/" title="interiordelight.ro">interiordelight.ro</a> and what benefits they bring.</p>
+      <p>We use cookies on <a href="/" title={domain}>{domain}</a> to create the most effective website possible for our users. Among other things, the cookies we use allow us to improve your experience when using our website and to ensure the website performs as you expect it to.</p>
+      <p>This cookie policy explains what cookies are, how we use them on <a href="/" title={domain}>{domain}</a> and what benefits they bring.</p>
       <p>The owners of the websites which are linked from this site may also use cookies to improve your experience and to ensure their websites performs as expected. Please bear in mind that our partners will have their own privacy and cookie policies that will govern their use of cookies.</p>
 
       <h4>Do cookies mean I could get cold calls or junk mail?</h4>
@@ -36,10 +37,10 @@ export default () => (
       <h4>How cookies make our website safer and easier to use</h4>
       <p>Cookies can be used for a variety of reasons, such as to improve the functionality and performance of this site and safeguard your privacy when browsing.</p>
       <p>We use "analytics" cookies on this site to help us make the site better for those who visit it regularly. They help us work out what users like and don't like and how we can improve things for you.</p>
-      <p>When we include links to other websites, please bear in mind they will have their own privacy and cookie policies that will govern the use of any information you submit. We recommend you read their policies as <a href="/" title="interiordelight.ro">interiordelight.ro</a> is not responsible or liable for their privacy practices.</p>
+      <p>When we include links to other websites, please bear in mind they will have their own privacy and cookie policies that will govern the use of any information you submit. We recommend you read their policies as <a href="/" title={domain}>{domain}</a> is not responsible or liable for their privacy practices.</p>
 
       <h4>How we work with trusted third parties</h4>
-      <p>Third parties are trusted suppliers to <a href="/" title="interiordelight.ro">interiordelight.ro</a> and include those partners who provide important functionality our website.</p>
+      <p>Third parties are trusted suppliers to <a href="/" title={domain}>{domain}</a> and include those partners who provide important functionality our website.</p>
       <p>We will not share any personal information gathered through cookies on this site with third parties.</p>
 
       <h4>How you can manage your cookies</h4>
@@ -50,7 +51,7 @@ export default () => (
 
       <h4>More about your privacy</h4>
 
-      <p>To find out more about how <a href="/" title="interiordelight.ro">interiordelight.ro</a> protects your privacy when using our website, see our website <a href="/terms-and-conditions">Terms and Conditions</a>.</p>
+      <p>To find out more about how <a href="/" title={domain}>{domain}</a> protects your privacy when using our website, see our website <a href="/terms-and-conditions">Terms and Conditions</a>.</p>
     </Content>
   </Layout>
 );

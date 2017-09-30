@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 import FooterMenu from './FooterMenu';
 import FooterBanners from './FooterBanners';
-import { tagline, colors } from '../config';
+import { domain, tagline, colors } from '../config';
 
 const Footer = ({ showBanners }) => (
   <footer className="footer">
@@ -17,7 +17,7 @@ const Footer = ({ showBanners }) => (
       <hr className="separator" />
       <div className="attribution">
         <div>Developed by <a className="link" title="Website developer profile" href="https://github.com/icflorescu" target="_blank" rel="noopener noreferrer">Ionut Cristian Florescu.</a></div>
-        <div>© 2010 — {(new Date()).getFullYear()} <Link href="/"><a title={tagline} className="link">interiordelight.ro</a></Link></div>
+        <div>© 2010 — {(new Date()).getFullYear()} <Link href="/"><a title={tagline} className="link">{domain}</a></Link></div>
       </div>
     </div>
     <style jsx>{`
