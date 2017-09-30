@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Head from 'next/head';
+import Router from 'next/router';
 
 import Header from './Header';
 import Footer from './Footer';
@@ -10,6 +11,10 @@ if (global.window && !global.window.lazySizes) {
   // eslint-disable-next-line global-require
   require('lazysizes');
 }
+
+Router.onRouteChangeComplete = (url) => {
+  global.ga('send', 'pageview', url);
+};
 
 const Layout = ({ title, schemaType, activeMenuItem, showFooterBanners, children }) => (
   <div
@@ -33,7 +38,17 @@ const Layout = ({ title, schemaType, activeMenuItem, showFooterBanners, children
     <Header activeMenuItem={activeMenuItem} />
     {children}
     <Footer showBanners={showFooterBanners} />
-    <script src="/static/ga.js" />
+    <script
+      // eslint-disable-next-line react/no-danger
+      dangerouslySetInnerHTML={{ __html: `
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-32370428-1', 'interiordelight.ro');
+        ga('send', 'pageview');
+      ` }}
+    />
     <style jsx global>{`
       /* global style */
       body {
