@@ -10,7 +10,7 @@
     "dev:projects": "yarn build-projects-json && chokidar projects-md -c 'yarn build-projects-json'",
     "dev:app": "node dev.js",
     "dev": "run-p dev:*",
-    "publish": "sh publish.sh"
+    "deploy": "sh deploy.sh"
   },
   "dependencies": {
     "classnames": "^2.2.5",
