@@ -22,6 +22,8 @@ const ProjectCover = ({ slug, title }) => {
       <style jsx>{`
         .cover {
           width: 100%;
+          min-height: 100px;
+          background: white url('/static/images/spinner.svg') center no-repeat;
         }
       `}</style>
     </div>

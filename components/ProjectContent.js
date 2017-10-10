@@ -54,6 +54,8 @@ export default class ProjectContent extends Component {
           .content :global(.image) {
             display: block;
             width: 100%;
+            min-height: 100px;
+            background: white url('/static/images/spinner.svg') center no-repeat;
             cursor: pointer;
           }
 
