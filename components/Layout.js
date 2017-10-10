@@ -5,7 +5,7 @@ import Router from 'next/router';
 
 import Header from './Header';
 import Footer from './Footer';
-import { domain, domainUrl, colors, iconLinks } from '../config';
+import { appName, domain, domainUrl, colors, iconLinks } from '../config';
 
 if (global.window && !global.window.lazySizes) {
   // eslint-disable-next-line global-require
@@ -26,6 +26,11 @@ const Layout = ({ title, schemaType, activeMenuItem, showFooterBanners, children
       <meta name="author" content="Ionut-Cristian Florescu" />
       <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
       {iconLinks}
+      <meta name="mobile-web-app-capable" content="yes" />
+      <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+      <meta name="apple-mobile-web-app-title" content={appName} />
+      <meta name="application-name" content={appName} />
+      <meta name="theme-color" content={colors.blue} />
       <link href="https://fonts.googleapis.com/css?family=Open+Sans|Poiret+One" rel="stylesheet" />
       <title>{title} – {domain}</title>
       <meta name="description" content="Professional interior design, decoration, visualization, 3D modeling, rendering and post-processing" />

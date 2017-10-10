@@ -1,5 +1,6 @@
 import React from 'react';
 
+export const appName = 'InteriorDelight.ro';
 export const brand = 'Interior Delight';
 export const tagline = 'Interior design and visualization done right.';
 export const domain = 'interiordelight.ro';
