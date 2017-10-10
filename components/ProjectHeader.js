@@ -57,7 +57,7 @@ const ProjectHeader = ({ title, color, description, prevProject, nextProject }) 
         transition: color .2s, background .2s;
       }
 
-      .link:hover {
+      .link:hover:not(:active) {
         color: white;
         background: ${colors.blue};
       }
