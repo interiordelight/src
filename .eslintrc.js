@@ -20,6 +20,7 @@ module.exports = {
     'import/prefer-default-export': 'off',
     'react/jsx-filename-extension': ['error', { extensions: ['.js', '.jsx'] }],
     'react/no-unescaped-entities': 'off',
+    'react/jsx-curly-brace-presence': ['warn', { 'props': 'always', 'children': 'never' }]
     'react/sort-comp': ['warn', { order: [
       'static-methods',
       'lifecycle',
