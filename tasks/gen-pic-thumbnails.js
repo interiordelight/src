@@ -2,7 +2,7 @@ const rimraf = require('rimraf');
 const mkdirp = require('mkdirp');
 const { readdirSync } = require('fs');
 const { basename, extname } = require('path');
-const execSync = require('child_process').execSync;
+const { execSync } = require('child_process');
 
 const execute = command => execSync(command.replace(/\s+/g, ' '));
 

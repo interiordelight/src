@@ -10,6 +10,7 @@
     "dev:projects": "yarn build-projects-json && chokidar projects-md -c 'yarn build-projects-json'",
     "dev:app": "node dev.js",
     "dev": "run-p dev:*",
+    "lint": "eslint .",
     "deploy": "sh deploy.sh"
   },
   "dependencies": {
@@ -28,6 +29,7 @@
     "pug": "^2.0.0-rc.4",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
+    "react-ga": "^2.3.5",
     "rimraf": "^2.6.2",
     "underscore.string": "^3.3.4"
   },

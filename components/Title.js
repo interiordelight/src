@@ -3,10 +3,12 @@ import PropTypes from 'prop-types';
 
 const Title = ({ text, textColor, underlineColor }) => (
   <div className="container">
-    <h3 style={{
-      color: textColor,
-      borderBottomColor: underlineColor
-    }}>{text}</h3>
+    <h3
+      style={{
+        color: textColor,
+        borderBottomColor: underlineColor
+      }}
+    >{text}</h3>
     <style jsx>{`
       .container {
         text-align: center;
