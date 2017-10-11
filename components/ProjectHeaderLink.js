@@ -30,10 +30,15 @@ export default class ProjectHeaderLink extends Component {
 
   render() {
     const { type, project } = this.props;
+
+    if (!project) {
+      return null;
+    }
+
     const { slug, title } = project;
     const { hover } = this.state;
 
-    return project ? (
+    return (
       <Link href={`/project?slug=${slug}`} as={`/portfolio/${slug}`}>
         <a
           className={classNames('link', { hover })}
@@ -70,6 +75,6 @@ export default class ProjectHeaderLink extends Component {
           `}</style>
         </a>
       </Link>
-    ) : null;
+    );
   }
 }
