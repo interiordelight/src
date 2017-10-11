@@ -9,7 +9,7 @@ The ground floor was designed as a semi-open space, with kitchen and dining area
 
 The first floor hosts the bedrooms and main bathrooms. The generous master bedroom was designed as a suite, with its own walk-in dressing and an impressive bathroom. A challenging roof structure due to changes in the project during construction phase resulted in a quite interesting solution for the ceiling, best seen in the master bedroom, where it has been emphasized through the use of wallpaper. A king size bed in the middle of the room was the particular request of the owners. The guest room was furnished with only the necessary fittings, while the child room was left for future decorating. Here, too, accessories were kept at a minimum.
 
-All the furniture was custom designed after the clients' specifications. Simple shapes and light, neutral colors were used to avoid cluttering the space.
+All the furniture was custom designed after the clients' specifications. Simple shapes and light, neutral colours were used to avoid cluttering the space.
 
 :::pics
 ![Dining](jpg)

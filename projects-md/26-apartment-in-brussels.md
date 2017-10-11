@@ -7,7 +7,7 @@ description:  An older project that, for various reasons, never got the chance t
 ---
 The space had potential and I invested some time in doing research and sketching for it, so, finally, I decided I should finish what I started, working in my spare time. Even though it will not become reality.
 
-Here is the day area, minus the kitchen which is on the opposite side of the house. The owner (single man) wanted a modern place, leaning toward the high end. I tried to stay within the original parameters of the project, but added more color and some patterns to make the place stylish, yet warm and cosy. The only major difference is the small bathroom, which was supposed to be finished with ceramic tiles in natural shades. Instead I fully painted it in a striking color which comes as a surprise in the overall design.
+Here is the day area, minus the kitchen which is on the opposite side of the house. The owner (single man) wanted a modern place, leaning toward the high end. I tried to stay within the original parameters of the project, but added more colour and some patterns to make the place stylish, yet warm and cosy. The only major difference is the small bathroom, which was supposed to be finished with ceramic tiles in natural shades. Instead I fully painted it in a striking colour which comes as a surprise in the overall design.
 
 :::pics
 ![Livingroom - picture 1](jpg)

@@ -9,7 +9,7 @@ A means to get away from the daily routine and spend some time with yourself. To
 
 I love handwork and have always dreamt of having the free time and my own, little den to enjoy meticulous crafts like sewing, knitting, embroidery and the like. Alas, 24 hours never seem enough to work, learn, sleep and spare some time for personal joys.
 
-In that spirit, a sewing room seemed the perfect subject for practice. In the lovely shabby chic style, because it's a girl's haven, bright, with soft colors, combining patterns, sheer fabrics and lots of small details. The actual working space is the subject for my next exercise, but for now, this has been valuable practice on all levels, not to mention a lot of fun.
+In that spirit, a sewing room seemed the perfect subject for practice. In the lovely shabby chic style, because it's a girl's haven, bright, with soft colours, combining patterns, sheer fabrics and lots of small details. The actual working space is the subject for my next exercise, but for now, this has been valuable practice on all levels, not to mention a lot of fun.
 
 :::pics
 ![Chabby chic - picture 1](jpg)

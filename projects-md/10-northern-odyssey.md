@@ -9,7 +9,7 @@ The "[Yummy green](/portfolio/yummy-green)" studio seemed like the perfect subje
 
 I greatly admire modern Scandinavian (interior) design, not only for its ability to blend beauty and creativity with practicality, but also for its sheer boldness. I took inspiration from it when I designed this layout that displays a regular bed. IKEA’s Kivik sofa, with its small, one person modules is a great choice for narrow places and the stool can be used as either a seat or a table. The wardrobe, media center and other storage cabinets have been combined in one large, compact wall unit, while the balcony has been turned into a private play-and-work space. The parapet separating the balcony from the rest of the room received a tabletop for meals or drinks. Additional storage can be found underneath the bed.
 
-Dominated by white, northern interiors, particularly Swedish, are pigmented with bright, saturated colors and large texture prints. It’s a great way to turn your living space from dull to exciting and inspirational.
+Dominated by white, northern interiors, particularly Swedish, are pigmented with bright, saturated colours and large texture prints. It’s a great way to turn your living space from dull to exciting and inspirational.
 
 :::pics
 ![Picture 1](jpg)

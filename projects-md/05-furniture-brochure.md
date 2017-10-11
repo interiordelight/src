@@ -2,10 +2,10 @@
 
 title:        Furniture brochure
 color:        A695B5
-description:  Pictues for a small brochure featuring the most successful projects of a custom high-quality furniture producer
+description:  Pictures for a small brochure featuring the most successful projects of a custom high-quality furniture producer
 
 ---
-One of the furniture producers I used to work with needed a small brochure featuring their most successful projects. Given that they did not manufacture serial furniture and from lack of proper pictures, they asked me to recreate some of their projects. I was handed the original drawings, but was given a lot of freedom in choosing the color palette, modeling the environment and creating the mood that, in my opinion, would best suit each particular case. Besides the rendered images, I also prepared the actual brochure for printing: text, graphic concept and lay-out.
+One of the furniture producers I used to work with needed a small brochure featuring their most successful projects. Given that they did not manufacture serial furniture and from lack of proper pictures, they asked me to recreate some of their projects. I was handed the original drawings, but was given a lot of freedom in choosing the colour palette, modelling the environment and creating the mood that, in my opinion, would best suit each particular case. Besides the rendered images, I also prepared the actual brochure for printing: text, graphic concept and lay-out.
 
 Being able to work on this project from concept to final brochure was an amazing opportunity and a great learning curve.
 

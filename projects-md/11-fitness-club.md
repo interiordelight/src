@@ -7,11 +7,11 @@ description:  Located on the first floor of an old two levels building, the proj
 ---
 One of the most challenging and dynamic projects I’ve been involved in, the expansion of the fitness club "[Body Exprim](http://www.bodyexprim.ro)" was also a very important learn-by-doing process.
 
-Located on the first floor of an old two levels building, the project implied taking over and remodeling the ground floor in order to make room for new sport activities and supplement space for existing ones.
+Located on the first floor of an old two levels building, the project implied taking over and remodelling the ground floor in order to make room for new sport activities and supplement space for existing ones.
 
-The open plan allowed us some degree of freedom in configuring the space, however the resulted rooms were smaller than we had hoped for and the ceiling was quite low. The obvious solution was to go with light colors and smooth, glossy surfaces, to brighten the space. But the club’s activity profile, in my opinion, required a design that radiated joy, energy and an overall feeling of well-being. I assigned each room a bright color and used large, dynamic prints on the walls to create a stimulating environment that motivates the clients to engage with their all in the club’s programs. The graphic elements and branding panels have been designed according to each room’s designation. Color was also used, together with lighting fixtures, to break the flatness of a long and narrow hallway.
+The open plan allowed us some degree of freedom in configuring the space, however the resulted rooms were smaller than we had hoped for and the ceiling was quite low. The obvious solution was to go with light colours and smooth, glossy surfaces, to brighten the space. But the club’s activity profile, in my opinion, required a design that radiated joy, energy and an overall feeling of well-being. I assigned each room a bright colour and used large, dynamic prints on the walls to create a stimulating environment that motivates the clients to engage with their all in the club’s programs. The graphic elements and branding panels have been designed according to each room’s designation. Colour was also used, together with lighting fixtures, to break the flatness of a long and narrow hallway.
 
-After months of exploring and modifying solutions, the remodeling is finally finished and, apparently, the clients are very excited about it. For actual photos, please visit the [club's website](http://www.bodyexprim.ro) for a virtual tour.
+After months of exploring and modifying solutions, the remodelling is finally finished and, apparently, the clients are very excited about it. For actual photos, please visit the [club's website](http://www.bodyexprim.ro) for a virtual tour.
 
 :::pics
 ![Rec 1](jpg)

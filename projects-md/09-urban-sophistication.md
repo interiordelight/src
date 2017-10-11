@@ -7,7 +7,7 @@ description:  I would describe this design as a chic bachelor crib of a metro-se
 ---
 The arrangement revolves around the conversation area, where the centerpiece is a low, comfortable sectional that can turn into a double bed at night. Light, almost ethereal shelves can hold a substantial collection of books, but are also a great, neutral background for displaying personal objects . The laptop desk doubles as a table, while the bar sits close to it on the balcony.
 
-The wall between the room and the kitchen received a large window that allows more natural light into the room and an interesting visual contact between the two spaces. Neutral colors complete the refined look, but the blue glass backsplash and the colorful mosaic like rug prevent it from being dull and lifeless.
+The wall between the room and the kitchen received a large window that allows more natural light into the room and an interesting visual contact between the two spaces. Neutral colours complete the refined look, but the blue glass backsplash and the colourful mosaic like rug prevent it from being dull and lifeless.
 
 :::pics
 ![Picture 01](jpg)
