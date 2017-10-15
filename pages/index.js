@@ -31,10 +31,10 @@ export default () => (
       type="application/ld+json"
       // eslint-disable-next-line react/no-danger
       dangerouslySetInnerHTML={{ __html: JSON.stringify({
-        '@context': 'ttp://schema.org',
+        '@context': 'http://schema.org',
         '@type': 'Organization',
         url: 'http://www.interiordelight.ro',
-        logo: 'http://www.interiordelight.ro/static/images/logo.svg'
+        logo: 'http://www.interiordelight.ro/static/images/interior-delight-logo.png'
       }) }}
     />
   </Layout>
