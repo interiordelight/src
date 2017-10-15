@@ -1,3 +1,5 @@
+// TODO: add itemProp dates!!!...
+
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import sampleSize from 'lodash.samplesize';
@@ -73,7 +75,8 @@ class Project extends Component {
             prevProject={prevProject}
             nextProject={nextProject}
           />
-          <div className="description">{description}</div>
+          <div itemProp="headline" className="description">{description}</div>
+          <meta itemProp="mainEntityOfPage" content={`${domainUrl}/portfolio/`} />
           <ProjectShareLinks
             url={`${domainUrl}/portfolio/${slug}/`}
             title={title}

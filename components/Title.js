@@ -1,13 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Title = ({ text, textColor, underlineColor }) => (
+const Title = ({ text, textColor, underlineColor, itemProp }) => (
   <div className="container">
     <h3
       style={{
         color: textColor,
         borderBottomColor: underlineColor
       }}
+      itemProp={itemProp}
     >{text}</h3>
     <style jsx>{`
       .container {
@@ -20,12 +21,14 @@ const Title = ({ text, textColor, underlineColor }) => (
 Title.propTypes = {
   text: PropTypes.string.isRequired,
   textColor: PropTypes.string,
-  underlineColor: PropTypes.string
+  underlineColor: PropTypes.string,
+  itemProp: PropTypes.string
 };
 
 Title.defaultProps = {
   textColor: null,
-  underlineColor: null
+  underlineColor: null,
+  itemProp: null
 };
 
 export default Title;

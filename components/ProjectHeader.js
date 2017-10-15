@@ -14,6 +14,7 @@ const ProjectHeader = ({ title, color, description, prevProject, nextProject }) 
         text={title}
         description={description}
         underlineColor={`#${color}`}
+        itemProp="name"
       />
     </div>
     <div className="link-container">

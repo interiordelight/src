@@ -32,6 +32,7 @@ export default class ProjectContent extends Component {
       <div>
         <div
           className="content"
+          itemProp="articleBody"
           // eslint-disable-next-line react/no-danger
           dangerouslySetInnerHTML={{ __html: body }}
           ref={this.contentRef}
