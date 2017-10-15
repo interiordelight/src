@@ -11,11 +11,9 @@ if (global.window) {
   if (!global.window.lazySizes) {
     require('lazysizes');
   }
-  const ga = require('react-ga');
-  ga.initialize(gaProperty);
-  ga.pageview(window.location.pathname);
+
   require('next/router').default.onRouteChangeComplete = (url) => {
-    ga.pageview(url);
+    global.ga('send', 'pageview', url);
   };
   /* eslint-enable global-require */
 }
@@ -26,6 +24,19 @@ const Layout = ({ title, schemaType, activeMenuItem, showFooterBanners, children
     itemType={schemaType ? `http://schema.org/${schemaType}` : null}
   >
     <Head>
+      <script async src={`https://www.googletagmanager.com/gtag/js?id=${gaProperty}`} />
+      <script
+        // eslint-disable-next-line react/no-danger
+        dangerouslySetInnerHTML={{ __html: `
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+          ga('create', '${gaProperty}', 'auto');
+          ga('send', 'pageview');
+      ` }}
+      />
       <meta charSet="UTF-8" />
       <meta name="author" content="Ionut-Cristian Florescu" />
       <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />

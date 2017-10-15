@@ -27,5 +27,15 @@ export default () => (
         <p>Need something done?</p>
       </CallToAction>
     </Content>
+    <script
+      type="application/ld+json"
+      // eslint-disable-next-line react/no-danger
+      dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        '@context': 'ttp://schema.org',
+        '@type': 'Organization',
+        url: 'http://www.interiordelight.ro',
+        logo: 'http://www.interiordelight.ro/static/images/logo.svg'
+      }) }}
+    />
   </Layout>
 );
