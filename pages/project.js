@@ -58,7 +58,7 @@ class Project extends Component {
       slug, title, color, description, body, gallery, otherProjects, prevProject, nextProject
     } = this.props;
     return (
-      <Layout title={title} activeMenuItem="portfolio" schemaType="Article">
+      <Layout title={title} activeMenuItem="portfolio">
         <ProjectHead
           slug={slug}
           title={title}

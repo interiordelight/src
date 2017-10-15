@@ -1,7 +1,5 @@
 import React from 'react';
 
-export const gaProperty = 'UA-32370428-1';
-
 export const appName = 'InteriorDelight.ro';
 export const brand = 'Interior Delight';
 export const tagline = 'Interior design and visualization done right.';
@@ -83,3 +81,4 @@ export const gallery = {
   wheelThrottle: 300
 };
 
+export const projectRegexp = /^\/portfolio\/.+/;

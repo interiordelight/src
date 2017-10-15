@@ -8,7 +8,7 @@ export default () => (
     title="See Google+ Profile"
   >
     <span itemScope itemProp="author" itemType="http://schema.org/Person">
-      Irinel-Ramona Florescu
+      <span itemProp="name">Irinel-Ramona Florescu</span>
     </span>
   </a>
 );
