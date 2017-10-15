@@ -16,7 +16,7 @@ export default class Doc extends Document {
       errorHtml,
       chunks,
       styles,
-      itemType: `http://http://schema.org/${projectRegexp.test(asPath) ? 'Article' : 'WebSite'}`
+      itemType: `http://http://schema.org/${projectRegexp.test(asPath) ? 'Article' : 'WebPage'}`
     };
   }
 

@@ -16,7 +16,7 @@ if (global.window) {
     // just for consistency, since this doesn't really matter on the client side
     htmlEl.setAttribute(
       'itemType',
-      `http://http://schema.org/${projectRegexp.test(url) ? 'Article' : 'WebSite'}`
+      `http://http://schema.org/${projectRegexp.test(url) ? 'Article' : 'WebPage'}`
     );
     global.ga('send', 'pageview', url);
   };
