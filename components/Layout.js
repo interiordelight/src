@@ -24,7 +24,6 @@ const Layout = ({ title, schemaType, activeMenuItem, showFooterBanners, children
     itemType={schemaType ? `http://schema.org/${schemaType}` : null}
   >
     <Head>
-      <script async src={`https://www.googletagmanager.com/gtag/js?id=${gaProperty}`} />
       <script
         // eslint-disable-next-line react/no-danger
         dangerouslySetInnerHTML={{ __html: `
