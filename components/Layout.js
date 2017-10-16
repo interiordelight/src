@@ -4,7 +4,7 @@ import Head from 'next/head';
 
 import Header from './Header';
 import Footer from './Footer';
-import { domain, projectRegexp, colors } from '../config';
+import { domain, domainUrl, projectRegexp, colors } from '../config';
 
 if (global.window) {
   // eslint-disable-next-line global-require

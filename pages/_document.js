@@ -4,7 +4,7 @@ import Document, { Head, Main, NextScript } from 'next/document';
 // eslint-disable-next-line import/no-extraneous-dependencies
 import flush from 'styled-jsx/server';
 
-import { appName, domain, domainUrl, colors, iconLinks, projectRegexp } from '../config';
+import { appName, domain, colors, iconLinks, projectRegexp } from '../config';
 
 export default class Doc extends Document {
   static getInitialProps({ asPath, renderPage }) {
