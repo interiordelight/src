@@ -5,6 +5,8 @@ import PropTypes from 'prop-types';
 import sampleSize from 'lodash.samplesize';
 import EventEmitter from 'eventemitter3';
 
+import prune from 'underscore.string/prune';
+
 import Layout from '../components/Layout';
 import ProjectHead from '../components/ProjectHead';
 import Content from '../components/Content';
@@ -75,7 +77,8 @@ class Project extends Component {
             prevProject={prevProject}
             nextProject={nextProject}
           />
-          <div itemProp="headline" className="description">{description}</div>
+          <meta itemProp="headline" content={prune(description, 110, '…')} />
+          <div className="description">{description}</div>
           <meta itemProp="mainEntityOfPage" content={`${domainUrl}/portfolio/`} />
           <ProjectShareLinks
             url={`${domainUrl}/portfolio/${slug}/`}
