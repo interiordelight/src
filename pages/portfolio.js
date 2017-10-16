@@ -7,7 +7,14 @@ import Content from '../components/Content';
 import Title from '../components/Title';
 import ProjectCards from '../components/ProjectCards';
 import CallToAction from '../components/CallToAction';
+import { domainUrl } from '../config';
 import projects from '../projects-json/index.json';
+
+const projectListItemLdJson = ({ slug }, index) => ({
+  '@type': 'ListItem',
+  position: index + 1,
+  url: `http://www.${domainUrl}/portfolio/${slug}/`
+});
 
 export default () => (
   <Layout title="Portfolio" activeMenuItem="portfolio" showFooterBanners>
@@ -21,5 +28,14 @@ export default () => (
         <p>Need something done?</p>
       </CallToAction>
     </Content>
+    <script
+      type="application/ld+json"
+      // eslint-disable-next-line react/no-danger
+      dangerouslySetInnerHTML={{
+        '@context': 'http://schema.org',
+        '@type': 'ItemList',
+        itemListElement: projects.map(projectListItemLdJson)
+      }}
+    />
   </Layout>
 );
