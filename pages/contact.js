@@ -38,8 +38,25 @@ export default () => (
         <hr className="separator" />
         <ContactLink type="behance" href="https://www.behance.net/iflorescu" title="Behance profile" />
         <ContactLink type="linkedin" href="https://linkedin.com/in/iriflorescu" title="LinkedIn profile" />
-        <ContactLink type="facebook" href="https://www.facebook.com/interiordelight.ro/" title="Official Facebook page" />
+        <ContactLink type="facebook" href="https://www.facebook.com/interiordelight.ro" title="Official Facebook page" />
         <ContactLink type="google" href="https://plus.google.com/+IrinelRamonaFlorescu" title="Google+ profile" />
+        <script
+          // eslint-disable-next-line react/no-danger
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+                '@context': 'http://schema.org',
+                '@type': 'Person',
+                name: 'Irinel-Ramona Florescu',
+                url: domainUrl,
+                sameAs: [
+                  'https://www.behance.net/iflorescu',
+                  'https://www.facebook.com/interiordelight.ro',
+                  'https://linkedin.com/in/iriflorescu',
+                  'https://plus.google.com/+IrinelRamonaFlorescu'
+                ]
+            })
+          }}
+        />
         <hr className="large separator" />
         <img
           className="picture"
@@ -53,6 +70,23 @@ export default () => (
         <ContactLink type="linkedin" href="https://linkedin.com/in/icflorescu" title="LinkedIn profile" />
         <ContactLink type="facebook" href="https://www.facebook.com/icflorescu" title="Facebook page" />
         <ContactLink type="google" href="https://plus.google.com/+IonutCristianFlorescu" title="Google+ profile" />
+        <script
+          // eslint-disable-next-line react/no-danger
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+                '@context': 'http://schema.org',
+                '@type': 'Person',
+                name: 'Ionut-Cristian Florescu',
+                url: domainUrl,
+                sameAs: [
+                  'https://github.com/icflorescu',
+                  'https://linkedin.com/in/icflorescu',
+                  'https://www.facebook.com/icflorescu',
+                  'https://plus.google.com/+IonutCristianFlorescu'
+                ]
+            })
+          }}
+        />
       </div>
       <style jsx>{`
         .container {
