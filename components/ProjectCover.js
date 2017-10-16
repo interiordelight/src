@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { domain } from '../config';
+import { domainUrl } from '../config';
 
 const ProjectCover = ({ slug, title }) => {
   const coverOriginalSrc = `/static/pics/o/${slug}-cover.jpg`;
@@ -17,7 +17,7 @@ const ProjectCover = ({ slug, title }) => {
       itemProp="image"
       itemType="http://schema.org/ImageObject"
     >
-      <meta itemProp="url" content={`http://www.${domain}${coverOriginalSrc}`} />
+      <meta itemProp="url" content={`${domainUrl}${coverOriginalSrc}`} />
       <img
         className="cover lazyload"
         alt={title}

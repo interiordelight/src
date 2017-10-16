@@ -13,7 +13,7 @@ import projects from '../projects-json/index.json';
 const projectListItemLdJson = ({ slug }, index) => ({
   '@type': 'ListItem',
   position: index + 1,
-  url: `http://www.${domainUrl}/portfolio/${slug}/`
+  url: `${domainUrl}/portfolio/${slug}/`
 });
 
 export default () => (
