@@ -32,9 +32,11 @@ export default () => (
       type="application/ld+json"
       // eslint-disable-next-line react/no-danger
       dangerouslySetInnerHTML={{
-        '@context': 'http://schema.org',
-        '@type': 'ItemList',
-        itemListElement: projects.map(projectListItemLdJson)
+        __html: JSON.stringify({
+          '@context': 'http://schema.org',
+          '@type': 'ItemList',
+          itemListElement: projects.map(projectListItemLdJson)
+        })
       }}
     />
   </Layout>
