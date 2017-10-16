@@ -30,16 +30,29 @@ export default () => (
           src="/static/images/irinel-ramona-florescu.jpg"
         />
         <div className="subtitle">Irinel-Ramona Florescu</div>
-        <p className="job">CG Artist & Architect</p>
+        <p className="job">Founder, CG Artist & Architect</p>
         <hr className="separator" />
         <ContactLink type="email" href="mailto:irinel.florescu@gmail.com" title="Send me an email" detail="irinel.florescu@gmail.com" />
         <hr className="separator" />
         <ContactLink type="skype" href="skype:irinel.florescu?call" title="Call me on Skype" detail="irinel.florescu" />
         <hr className="separator" />
         <ContactLink type="behance" href="https://www.behance.net/iflorescu" title="Behance profile" />
-        <ContactLink type="linkedin" href="http://linkedin.com/in/iriflorescu" title="LinkedIn profile" />
+        <ContactLink type="linkedin" href="https://linkedin.com/in/iriflorescu" title="LinkedIn profile" />
         <ContactLink type="facebook" href="https://www.facebook.com/interiordelight.ro/" title="Official Facebook page" />
-        <ContactLink type="google" href="http://plus.google.com/+IrinelRamonaFlorescu" title="Google+ profile" />
+        <ContactLink type="google" href="https://plus.google.com/+IrinelRamonaFlorescu" title="Google+ profile" />
+        <hr className="large separator" />
+        <img
+          className="picture"
+          alt="Irinel-Ramona Florescu"
+          src="/static/images/ionut-cristian-florescu.jpg"
+        />
+        <div className="subtitle">Ionut-Cristian Florescu</div>
+        <p className="job">Co-Founder, Technical Support</p>
+        <hr className="separator" />
+        <ContactLink type="github" href="https://github.com/icflorescu" title="GitHub profile" />
+        <ContactLink type="linkedin" href="https://linkedin.com/in/icflorescu" title="LinkedIn profile" />
+        <ContactLink type="facebook" href="https://www.facebook.com/icflorescu" title="Facebook page" />
+        <ContactLink type="google" href="https://plus.google.com/+IonutCristianFlorescu" title="Google+ profile" />
       </div>
       <style jsx>{`
         .container {
@@ -62,6 +75,10 @@ export default () => (
           height: 1px;
           background: ${colors.lightGray};
           max-width: 75%;
+        }
+        .large.separator {
+          margin: 10px -10px 30px;
+          max-width: initial;
         }
 
         @media (min-width: 480px) {

@@ -165,6 +165,9 @@ const Layout = ({ title, activeMenuItem, showFooterBanners, children }) => (
       .icon-skype:before {
         content: "\\e90e";
       }
+      .icon-github:before {
+        content: "\\e90f";
+      }
     `}</style>
   </div>
 );
