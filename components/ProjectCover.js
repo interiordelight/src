@@ -17,7 +17,7 @@ const ProjectCover = ({ slug, title }) => {
       itemProp="image"
       itemType="http://schema.org/ImageObject"
     >
-      <meta itemProp="url" content={`http://${domain}/${coverOriginalSrc}`} />
+      <meta itemProp="url" content={`http://www.${domain}/${coverOriginalSrc}`} />
       <img
         className="cover lazyload"
         alt={title}
