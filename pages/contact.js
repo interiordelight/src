@@ -41,6 +41,7 @@ export default () => (
         <ContactLink type="facebook" href="https://www.facebook.com/interiordelight.ro" title="Official Facebook page" />
         <ContactLink type="google" href="https://plus.google.com/+IrinelRamonaFlorescu" title="Google+ profile" />
         <script
+          type="application/ld+json"
           // eslint-disable-next-line react/no-danger
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
@@ -71,6 +72,7 @@ export default () => (
         <ContactLink type="facebook" href="https://www.facebook.com/icflorescu" title="Facebook page" />
         <ContactLink type="google" href="https://plus.google.com/+IonutCristianFlorescu" title="Google+ profile" />
         <script
+          type="application/ld+json"
           // eslint-disable-next-line react/no-danger
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
