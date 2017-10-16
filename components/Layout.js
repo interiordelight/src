@@ -26,6 +26,11 @@ const Layout = ({ title, activeMenuItem, showFooterBanners, children }) => (
   <div>
     <Head>
       <title>{title} – {domain}</title>
+      <meta name="description" content="Professional interior design, decoration, visualization, 3D modeling, rendering and post-processing" />
+      <meta name="keywords" content="interior design, 3d, modeling, rendering, post processing, rhino, vray, maxwell, photoshop" />
+      <meta property="og:title" content="Interior design and visualization done right" />
+      <meta property="og:image" content={`${domainUrl}/static/images/interiordelight-og-image.jpg`} />
+      <meta property="og:description" content="Professional interior design, decoration, visualization, 3D modeling, rendering and post-processing" />
     </Head>
     <Header activeMenuItem={activeMenuItem} />
     {children}

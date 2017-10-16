@@ -35,12 +35,7 @@ export default class Doc extends Document {
           <meta name="application-name" content={appName} />
           <meta name="theme-color" content={colors.blue} />
           <link href="https://fonts.googleapis.com/css?family=Open+Sans|Poiret+One" rel="stylesheet" />
-          <meta name="description" content="Professional interior design, decoration, visualization, 3D modeling, rendering and post-processing" />
-          <meta name="keywords" content="interior design, 3d, modeling, rendering, post processing, rhino, vray, maxwell, photoshop" />
           <meta property="og:site_name" content={domain} />
-          <meta property="og:title" content="Interior design and visualization done right" />
-          <meta property="og:image" content={`${domainUrl}/static/images/interiordelight-og-image.jpg`} />
-          <meta property="og:description" content="Professional interior design, decoration, visualization, 3D modeling, rendering and post-processing" />
         </Head>
         <body>
           <Main />
