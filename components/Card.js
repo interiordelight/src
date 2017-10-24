@@ -18,7 +18,7 @@ const Card = ({ children }) => (
         }
       }
 
-      // quite improbable
+      /* quite improbable */
       @media (max-width: 350px) {
         .container {
           width: 100%;

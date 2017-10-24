@@ -54,7 +54,7 @@ export default () => (
         }
       }
 
-      // quite improbable
+      /* quite improbable */
       @media (max-width: 350px) {
         .brand {
           margin: 0 0 40px 90px;

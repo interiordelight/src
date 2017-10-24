@@ -70,7 +70,7 @@ export default class ProjectContent extends Component {
             }
           }
 
-          // quite improbable
+          /* quite improbable */
           @media (max-width: 350px) {
             .content :global(.pic) {
               width: 100%;

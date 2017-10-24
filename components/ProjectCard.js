@@ -54,7 +54,7 @@ const ProjectCard = ({ slug, title, color }) => {
           }
         }
 
-        // quite improbable
+        /* quite improbable */
         @media (max-width: 350px) {
           .title {
             height: auto;
