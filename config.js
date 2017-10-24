@@ -80,5 +80,3 @@ export const gallery = {
   slideSpeed: 300,
   wheelThrottle: 300
 };
-
-export const projectRegexp = /^\/portfolio\/.+/;

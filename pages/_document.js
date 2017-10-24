@@ -4,20 +4,14 @@ import Document, { Head, Main, NextScript } from 'next/document';
 // eslint-disable-next-line import/no-extraneous-dependencies
 import flush from 'styled-jsx/server';
 
-import { appName, domain, colors, iconLinks, projectRegexp } from '../config';
+import { appName, domain, colors, iconLinks } from '../config';
+import getItemType from '../utils/getItemType';
 
 export default class Doc extends Document {
   static getInitialProps({ asPath, renderPage }) {
     const { html, head, errorHtml, chunks } = renderPage();
     const styles = flush();
-    return {
-      html,
-      head,
-      errorHtml,
-      chunks,
-      styles,
-      itemType: `http://schema.org/${projectRegexp.test(asPath) ? 'Article' : 'WebSite'}`
-    };
+    return { html, head, errorHtml, chunks, styles, itemType: getItemType(asPath) };
   }
 
   render() {

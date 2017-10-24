@@ -4,7 +4,8 @@ import Head from 'next/head';
 
 import Header from './Header';
 import Footer from './Footer';
-import { domain, domainUrl, projectRegexp, colors } from '../config';
+import { domain, domainUrl, colors } from '../config';
+import getItemType from '../utils/getItemType';
 
 if (global.window) {
   // eslint-disable-next-line global-require
@@ -14,10 +15,7 @@ if (global.window) {
   // eslint-disable-next-line global-require
   require('next/router').default.onRouteChangeComplete = (url) => {
     // just for consistency, since this doesn't really matter on the client side
-    htmlEl.setAttribute(
-      'itemType',
-      `http://schema.org/${projectRegexp.test(url) ? 'Article' : 'WebSite'}`
-    );
+    htmlEl.setAttribute('itemType', getItemType(url));
     global.ga('send', 'pageview', url);
   };
 }
