@@ -1,6 +1,6 @@
 {
   "name": "interiordelight.ro",
-  "version": "3.0.1",
+  "version": "3.0.2",
   "description": "Next.js application for interiordelight.ro",
   "main": "index.js",
   "license": "UNLICENSED",
@@ -16,31 +16,31 @@
   },
   "dependencies": {
     "classnames": "^2.2.5",
-    "eventemitter3": "^2.0.3",
+    "eventemitter3": "^3.0.0",
     "express": "^4.16.2",
     "front-matter": "^2.3.0",
     "lazysizes": "^4.0.1",
     "lodash.samplesize": "^4.2.0",
     "lodash.throttle": "^4.1.1",
-    "lory.js": "^2.3.3",
-    "marked": "^0.3.6",
+    "lory.js": "^2.3.4",
+    "marked": "^0.3.7",
     "mkdirp": "^0.5.1",
     "next": "^4.1.4",
     "prop-types": "^15.6.0",
     "pug": "^2.0.0-rc.4",
-    "react": "^16.1.1",
-    "react-dom": "^16.1.1",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
     "rimraf": "^2.6.2",
     "underscore.string": "^3.3.4"
   },
   "devDependencies": {
-    "babel-eslint": "^8.0.2",
+    "babel-eslint": "^8.0.3",
     "chokidar-cli": "^1.2.0",
-    "eslint": "^4.11.0",
+    "eslint": "^4.12.1",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-plugin-import": "^2.8.0",
     "eslint-plugin-jsx-a11y": "^6.0.2",
-    "eslint-plugin-react": "^7.4.0",
+    "eslint-plugin-react": "^7.5.1",
     "npm-run-all": "^4.1.2"
   }
 }
