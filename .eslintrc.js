@@ -22,7 +22,7 @@ module.exports = {
     'jsx-a11y/anchor-is-valid': 'off',
     'jsx-a11y/click-events-have-key-events': 'off',
     'react/jsx-filename-extension': ['error', { extensions: ['.js', '.jsx'] }],
-    'react/no-unescaped-entities': 'off',
+    // 'react/no-unescaped-entities': 'off', // to ensure code readability on GitHub online
     'react/jsx-curly-brace-presence': ['warn', { 'props': 'never', 'children': 'ignore' }],
     'react/jsx-closing-tag-location': 'off',
     'react/sort-comp': ['warn', { order: [

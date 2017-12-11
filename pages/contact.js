@@ -23,7 +23,7 @@ export default () => (
     <Hero picture="map">
       <div className="container">
         <h3 className="title">Contact</h3>
-        <p>Need something done? Let's talk!</p>
+        <p>Need something done? Let&apos;s talk!</p>
         <img
           className="picture"
           alt="Irinel-Ramona Florescu"
