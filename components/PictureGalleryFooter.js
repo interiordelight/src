@@ -22,7 +22,7 @@ const PictureGalleryFooter = ({ projectSlug, projectTitle, currentSlideSrc }) =>
         bottom: 0;
         left: 0;
         right: 0;
-        background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, .5));
+        background: linear-gradient(to bottom, transparent, rgba(black, 50%));
         text-align: center;
         z-index: 1;
         opacity: .5;

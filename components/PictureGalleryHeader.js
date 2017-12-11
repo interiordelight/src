@@ -35,7 +35,7 @@ const PictureGalleryHeader = ({ projectTitle, pictures, currentSlideSrc, onDotCl
         padding: 16px;
         z-index: 1;
         color: white;
-        background: linear-gradient(to bottom, rgba(0, 0, 0, .5), transparent);
+        background: linear-gradient(to bottom, rgba(black, 50%), transparent);
         opacity: .5;
         transition: opacity .5s;
         display: flex;

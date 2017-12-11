@@ -30,7 +30,7 @@ const ProjectCard = ({ slug, title, color }) => {
         }
 
         .link:hover {
-          box-shadow: 0 1px 3px rgba(0, 0, 0, .66);
+          box-shadow: 0 1px 3px rgba(black, 66%);
         }
 
         .cover {

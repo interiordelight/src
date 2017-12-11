@@ -61,7 +61,7 @@ export default class ProjectContent extends Component {
           }
 
           .content :global(.image:hover) {
-            box-shadow: 0 1px 3px rgba(0, 0, 0, .66);
+            box-shadow: 0 1px 3px rgba(black, 66%);
           }
 
           @media (min-width: 768px) {
