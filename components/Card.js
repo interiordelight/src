@@ -10,17 +10,13 @@ const Card = ({ children }) => (
         width: 50%;
         box-sizing: border-box;
         padding: 10px;
-      }
 
-      @media (min-width: 768px) {
-        .container {
+        @media (min-width: 768px) {
           width: 25%;
         }
-      }
 
-      /* quite improbable */
-      @media (max-width: 350px) {
-        .container {
+        /* quite improbable */
+        @media (max-width: 350px) {
           width: 100%;
         }
       }

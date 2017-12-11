@@ -13,7 +13,16 @@ const FooterBanner = ({ code, name, tld }) => (
     <style jsx>{`
       .container {
         flex: 1 0 auto;
+
+        @media (min-width: 400px) {
+          flex-basis: 50%;
+        }
+
+        @media (min-width: 800px) {
+          flex-basis: 186px;
+        }
       }
+
       .banner {
         display: inline-block;
         width: 166px;
@@ -33,36 +42,25 @@ const FooterBanner = ({ code, name, tld }) => (
 
       .evg {
         background-position: -166px 0;
-      }
-      .evg:hover {
-        background-position: -166px -100px;
+        &:hover {
+          background-position: -166px -100px;
+        }
       }
 
       .bex {
         background-position: -332px 0;
-      }
-      .bex:hover {
-        background-position: -332px -100px;
+        &:hover {
+          background-position: -332px -100px;
+        }
       }
 
       .viv {
         background-position: -498px 0;
-      }
-      .viv:hover {
-        background-position: -498px -100px;
-      }
-      @media (min-width: 400px) {
-        .container {
-          flex-basis: 50%;
-        }
-      }
-      @media (min-width: 800px) {
-        .container {
-          flex-basis: 186px;
+        &:hover {
+          background-position: -498px -100px;
         }
       }
     `}</style>
-
   </div>
 );
 

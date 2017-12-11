@@ -92,10 +92,18 @@ export default () => (
       </div>
       <style jsx>{`
         .container {
-          background: rgba(255, 255, 255, .75);
+          background: rgba(white, 75%);
           width: 90%;
           padding: 10px;
           margin: 50px auto;
+
+          @media (min-width: 480px) {
+            width: 420px;
+          }
+
+          @media (min-width: 768px) {
+            width: 600px;
+          }
         }
 
         .picture {
@@ -111,21 +119,10 @@ export default () => (
           height: 1px;
           background: ${colors.lightGray};
           max-width: 75%;
-        }
-        .large.separator {
-          margin: 10px -10px 30px;
-          max-width: initial;
-        }
 
-        @media (min-width: 480px) {
-          .container {
-            width: 420px;
-          }
-        }
-
-        @media (min-width: 768px) {
-          .container {
-            width: 600px;
+          &.large {
+            margin: 10px -10px 30px;
+            max-width: initial;
           }
         }
       `}</style>

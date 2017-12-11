@@ -24,22 +24,18 @@ const CallToAction = ({ children }) => (
         border: 2px solid ${colors.darkGray};
         padding: 0 16px;
         transition: background .2s;
-      }
 
-      .call-to-action:hover {
-        color: white;
-        background: ${colors.darkGray};
-      }
+        &:hover {
+          color: white;
+          background: ${colors.darkGray};
+        }
 
-      @media (min-width: 500px) {
-        .call-to-action {
+        @media (min-width: 500px) {
           font-size: 36px;
           padding: 0 20px;
         }
-      }
 
-      @media (min-width: 1000px) {
-        .call-to-action {
+        @media (min-width: 1000px) {
           font-size: 52px;
           padding: 0 24px;
         }

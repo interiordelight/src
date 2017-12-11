@@ -18,6 +18,36 @@ const ContactLink = ({ type, href, title, detail }) => (
         display: inline-block;
         text-decoration: none;
         margin: 12px 0;
+
+        &:hover {
+          .icon {
+            background: ${colors.blue};
+          }
+
+          .icon-skype {
+            background: ${colors.skype}
+          }
+
+          .icon-behance {
+            background: ${colors.behance}
+          }
+
+          .icon-linkedin {
+            background: ${colors.linkedin}
+          }
+
+          .icon-facebook {
+            background: ${colors.facebook}
+          }
+
+          .icon-google {
+            background: ${colors.google}
+          }
+
+          .detail {
+            color: ${colors.blue};
+          }
+        }
       }
 
       .icon {
@@ -31,37 +61,9 @@ const ContactLink = ({ type, href, title, detail }) => (
         margin: 4px 12px;
       }
 
-      .link:hover .icon {
-        background: ${colors.blue};
-      }
-
-      .link:hover .icon-skype {
-        background: ${colors.skype}
-      }
-
-      .link:hover .icon-behance {
-        background: ${colors.behance}
-      }
-
-      .link:hover .icon-linkedin {
-        background: ${colors.linkedin}
-      }
-
-      .link:hover .icon-facebook {
-        background: ${colors.facebook}
-      }
-
-      .link:hover .icon-google {
-        background: ${colors.google}
-      }
-
       .detail {
         color: ${colors.text};
         transition: background .2s;
-      }
-
-      .link:hover .detail {
-        color: ${colors.blue};
       }
     `}</style>
   </a>

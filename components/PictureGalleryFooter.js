@@ -27,10 +27,10 @@ const PictureGalleryFooter = ({ projectSlug, projectTitle, currentSlideSrc }) =>
         z-index: 1;
         opacity: .5;
         transition: opacity .5s;
-      }
 
-      .container:hover {
-        opacity: 1;
+        &:hover {
+          opacity: 1;
+        }
       }
     `}</style>
   </div>

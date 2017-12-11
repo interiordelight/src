@@ -32,18 +32,14 @@ export default class PictureGalleryHeaderDot extends Component {
             border: 2px solid white;
             border-radius: 50%;
             margin: 4px 4px 0 0;
-          }
 
-          @media (min-width: 768px) {
-            .dot {
+            @media (min-width: 768px) {
               width: 8px;
               height: 8px;
               margin: 6px 6px 0 0;
             }
-          }
 
-          @media (min-width: 1000px) {
-            .dot {
+            @media (min-width: 1000px) {
               width: 10px;
               height: 10px;
               margin: 8px 8px 0 0;

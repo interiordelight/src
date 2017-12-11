@@ -53,6 +53,30 @@ export default class ShareLink extends Component {
             text-decoration: none;
             margin: 10px 6px;
             cursor: pointer;
+
+            @media (min-width: 768px) {
+              text-decoration: none;
+              margin: 16px 12px;
+              cursor: pointer;
+            }
+
+            &:hover {
+              .icon-facebook {
+                background: ${colors.facebook}
+              }
+              .icon-twitter {
+                background: ${colors.twitter}
+              }
+              .icon-google {
+                background: ${colors.google}
+              }
+              .icon-pinterest {
+                background: ${colors.pinterest}
+              }
+              .icon-linkedin {
+                background: ${colors.linkedin}
+              }
+            }
           }
 
           .icon {
@@ -65,30 +89,6 @@ export default class ShareLink extends Component {
             background: ${colors.mediumGray};
             border-radius: 50%;
             transition: background .2s;
-          }
-
-          .link:hover .icon-facebook {
-            background: ${colors.facebook}
-          }
-          .link:hover .icon-twitter {
-            background: ${colors.twitter}
-          }
-          .link:hover .icon-google {
-            background: ${colors.google}
-          }
-          .link:hover .icon-pinterest {
-            background: ${colors.pinterest}
-          }
-          .link:hover .icon-linkedin {
-            background: ${colors.linkedin}
-          }
-
-          @media (min-width: 768px) {
-            .link {
-              text-decoration: none;
-              margin: 16px 12px;
-              cursor: pointer;
-            }
           }
         `}</style>
       </a>

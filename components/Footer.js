@@ -35,9 +35,10 @@ const Footer = ({ showBanners }) => (
         color: white;
         text-decoration: none;
         border-bottom: 1px dotted ${colors.mediumGray};
-      }
-      .link:hover {
-        border-bottom-style: solid;
+
+        &:hover {
+          border-bottom-style: solid;
+        }
       }
 
       .separator {

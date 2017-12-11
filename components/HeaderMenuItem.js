@@ -21,21 +21,22 @@ const HeaderMenuItem = ({ href, text, title, iconName, isActive }) => (
           text-decoration: none;
           color: white;
           position: relative;
+
+          &.active::after {
+            position: absolute;
+            content: '';
+            border: 8px solid transparent;
+            border-top-color: ${colors.blue};
+            top: 48px;
+            left: 50%;
+            transform: translate3d(-50%, 0, 0);
+          }
+
+          &:first-child {
+            border-left: none;
+          }
         }
 
-        .container.active::after {
-          position: absolute;
-          content: '';
-          border: 8px solid transparent;
-          border-top-color: ${colors.blue};
-          top: 48px;
-          left: 50%;
-          transform: translate3d(-50%, 0, 0);
-        }
-
-        .container:first-child {
-          border-left: none;
-        }
 
         .icon, .text {
           line-height: 48px;
@@ -66,12 +67,14 @@ const HeaderMenuItem = ({ href, text, title, iconName, isActive }) => (
             margin: 28px 0 0 30px;
             border-top: 4px solid transparent;
             transition: 0.2s border-color;
-          }
-          .container:hover {
-            border-top-color: white;
-          }
-          .container.active::after {
-            top: 84px;
+
+            &:hover {
+              border-top-color: white;
+            }
+
+            &.active::after {
+              top: 84px;
+            }
           }
 
           .text {

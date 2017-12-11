@@ -62,11 +62,11 @@ export default class ProjectHeaderLink extends Component {
               border-radius: 50%;
               text-decoration: none;
               transition: color .2s, background .2s;
-            }
 
-            .link.hover {
-              color: white;
-              background: ${colors.blue};
+              &.hover {
+                color: white;
+                background: ${colors.blue};
+              }
             }
 
             .icon {

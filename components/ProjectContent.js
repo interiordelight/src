@@ -38,42 +38,40 @@ export default class ProjectContent extends Component {
           ref={this.contentRef}
         />
         <style jsx>{`
-          .content :global(.pics) {
-            margin: 0 -10px;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-          }
-
-          .content :global(.pic) {
-            flex: 0 0 auto;
-            width: 50%;
-            box-sizing: border-box;
-            padding: 10px;
-          }
-
-          .content :global(.image) {
-            display: block;
-            width: 100%;
-            min-height: 100px;
-            background: white url('/static/images/spinner.svg') center no-repeat;
-            cursor: pointer;
-          }
-
-          .content :global(.image:hover) {
-            box-shadow: 0 1px 3px rgba(black, 66%);
-          }
-
-          @media (min-width: 768px) {
-            .content :global(.pic) {
-              width: 25%;
+          .content {
+            :global(.pics) {
+              margin: 0 -10px;
+              display: flex;
+              flex-wrap: wrap;
+              justify-content: center;
             }
-          }
 
-          /* quite improbable */
-          @media (max-width: 350px) {
-            .content :global(.pic) {
+            :global(.pic) {
+              flex: 0 0 auto;
+              width: 50%;
+              box-sizing: border-box;
+              padding: 10px;
+
+              @media (min-width: 768px) {
+                width: 25%;
+              }
+
+              /* quite improbable */
+              @media (max-width: 350px) {
+                width: 100%;
+              }
+            }
+
+            :global(.image) {
+              display: block;
               width: 100%;
+              min-height: 100px;
+              background: white url('/static/images/spinner.svg') center no-repeat;
+              cursor: pointer;
+            }
+
+            :global(.image:hover) {
+              box-shadow: 0 1px 3px rgba(black, 66%);
             }
           }
         `}</style>

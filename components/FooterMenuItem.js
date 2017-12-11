@@ -14,29 +14,28 @@ const FooterMenuItem = ({ href, text, title }) => (
         display: block;
         padding: 14px;
         border-bottom: 1px solid ${colors.lightGray};
+
+        @media (min-width: 500px) {
+          display: inline;
+          border-bottom: 0;
+          padding: 0;
+          &::before {
+            content: '·';
+            margin: 0 10px;
+          }
+          &:first-child::before {
+            display: none;
+          }
+        }
       }
 
       .link {
         color: white;
         text-transform: uppercase;
         text-decoration: none;
-      }
-      .link:hover {
-        text-decoration: underline;
-      }
 
-      @media (min-width: 500px) {
-        .item {
-          display: inline;
-          border-bottom: 0;
-          padding: 0;
-        }
-        .item::before {
-          content: '·';
-          margin: 0 10px;
-        }
-        .item:first-child::before {
-          display: none;
+        &:hover {
+          text-decoration: underline;
         }
       }
     `}</style>

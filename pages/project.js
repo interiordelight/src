@@ -123,17 +123,15 @@ class Project extends Component {
             color: ${colors.darkGray};
             text-align: center;
             font-size: 16px;
+
+            @media (min-width: 768px) {
+              font-size: 20px;
+            }
           }
 
           .author {
             margin: 1em;
             text-align: center;
-          }
-
-          @media (min-width: 768px) {
-            .description {
-              font-size: 20px;
-            }
           }
         `}</style>
       </Layout>

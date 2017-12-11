@@ -27,10 +27,10 @@ const ProjectCard = ({ slug, title, color }) => {
           color: white;
           text-align: center;
           text-decoration: none;
-        }
 
-        .link:hover {
-          box-shadow: 0 1px 3px rgba(black, 66%);
+          &:hover {
+            box-shadow: 0 1px 3px rgba(black, 66%);
+          }
         }
 
         .cover {
@@ -45,18 +45,14 @@ const ProjectCard = ({ slug, title, color }) => {
           font-size: 16px;
           padding: .5em .25em;
           height: 48px;
-        }
 
-        @media (min-width: 480px) {
-          .title {
+          @media (min-width: 480px) {
             font-size: 18px;
             height: 60px;
           }
-        }
 
-        /* quite improbable */
-        @media (max-width: 350px) {
-          .title {
+          /* quite improbable */
+          @media (max-width: 350px) {
             height: auto;
           }
         }

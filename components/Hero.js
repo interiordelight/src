@@ -57,7 +57,7 @@ export default class Hero extends Component {
           .text {
             font: 24px/1.65 'Poiret One', sans-serif;
             color: white;
-            background: rgba(0, 0, 0, .3);
+            background: rgba(black, 30%);
             text-shadow: 0 0 1px black, 0 2px 6px black;
             text-transform: uppercase;
             display: inline-block;
@@ -65,17 +65,13 @@ export default class Hero extends Component {
             margin: 25px auto;
             max-width: 75%;
             animation: hero-text 8s 2s infinite;
-          }
 
-          @media (min-width: 480px) {
-            .text {
+            @media (min-width: 480px) {
               font-size: 36px;
               margin: 50px auto;
             }
-          }
 
-          @media (min-width: 1000px) {
-            .text {
+            @media (min-width: 1000px) {
               font-size: 52px;
               margin: 100px auto;
             }

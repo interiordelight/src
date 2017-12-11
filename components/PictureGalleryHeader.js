@@ -36,14 +36,14 @@ const PictureGalleryHeader = ({ projectTitle, pictures, currentSlideSrc, onDotCl
         z-index: 1;
         color: white;
         background: linear-gradient(to bottom, rgba(black, 50%), transparent);
-        opacity: .5;
         transition: opacity .5s;
         display: flex;
         align-items: flex-start;
-      }
+        opacity: .5;
 
-      .container:hover {
-        opacity: 1;
+        &:hover {
+          opacity: 1;
+        }
       }
 
       .title {

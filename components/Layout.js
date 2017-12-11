@@ -65,10 +65,9 @@ const Layout = ({ title, activeMenuItem, showFooterBanners, children }) => (
 
       a {
         color: ${colors.greenText};
-      }
-
-      a:hover {
-        color: ${colors.redText};
+        &:hover {
+          color: ${colors.redText};
+        }
       }
 
       hr {

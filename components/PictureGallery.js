@@ -150,11 +150,11 @@ export default class PictureGallery extends Component {
             transform: translate3d(100%, 0, 0);
             transition: opacity .5s;
             background: rgba(0, 0, 0, .9);
-          }
 
-          .container.active {
-            transform: translate3d(0, 0, 0);
-            opacity: 1;
+            &.active {
+              transform: translate3d(0, 0, 0);
+              opacity: 1;
+            }
           }
 
           .icon {
@@ -167,13 +167,17 @@ export default class PictureGallery extends Component {
             font-size: 48px;
             padding: 30px 6px;
             background: rgba(0, 0, 0, .24);
-            opacity: .5;
             transition: opacity .5s;
             cursor: pointer;
-          }
+            opacity: .5;
 
-          .icon:hover {
-            opacity: 1;
+            &:hover {
+              opacity: 1;
+            }
+
+            @media (min-width: 768px) {
+              display: block;
+            }
           }
 
           .icon-right {
@@ -190,12 +194,6 @@ export default class PictureGallery extends Component {
 
           .slides {
             display: inline-block;
-          }
-
-          @media (min-width: 768px) {
-            .icon {
-              display: block;
-            }
           }
         `}</style>
       </div>

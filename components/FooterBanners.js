@@ -21,6 +21,12 @@ export default () => (
 
       .inner-container {
         padding: 10px;
+
+        @media (min-width: 1000px) {
+          width: 980px;
+          margin: auto;
+          padding: 20px 0;
+        }
       }
 
       .title {
@@ -33,14 +39,6 @@ export default () => (
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-      }
-
-      @media (min-width: 1000px) {
-        .inner-container {
-          width: 980px;
-          margin: auto;
-          padding: 20px 0;
-        }
       }
     `}</style>
   </div>
