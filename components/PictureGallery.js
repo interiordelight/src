@@ -149,7 +149,7 @@ export default class PictureGallery extends Component {
             opacity: 0;
             transform: translate3d(100%, 0, 0);
             transition: opacity .5s;
-            background: rgba(0, 0, 0, .9);
+            background: rgba(black, 90%);
 
             &.active {
               transform: translate3d(0, 0, 0);
@@ -166,7 +166,7 @@ export default class PictureGallery extends Component {
             color: white;
             font-size: 48px;
             padding: 30px 6px;
-            background: rgba(0, 0, 0, .24);
+            background: rgba(black, 24%);
             transition: opacity .5s;
             cursor: pointer;
             opacity: .5;
