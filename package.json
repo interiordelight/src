@@ -1,8 +1,9 @@
 {
   "name": "interiordelight.ro",
-  "version": "3.0.3",
+  "version": "3.0.4",
   "description": "Next.js application for interiordelight.ro",
   "main": "index.js",
+  "private": true,
   "license": "UNLICENSED",
   "scripts": {
     "gen-pic-thumbnails": "node tasks/gen-pic-thumbnails.js",
