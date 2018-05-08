@@ -73,3 +73,79 @@ appending to this document.
 View my publicly-auditable identity here: https://keybase.io/icflorescu
 
 ==================================================================
+
+==================================================================
+https://keybase.io/irinelflorescu
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://www.interiordelight.ro
+  * I am irinelflorescu (https://keybase.io/irinelflorescu) on keybase.
+  * I have a public key with fingerprint C97B 06A9 ECB8 6E68 309D  C2E7 03BD 90CD C4DA 745F
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120cb5ffaa9fd4c06092fa20387c99eadcc6960bd2db71f76c7eb092c2cc76c27770a",
+      "fingerprint": "c97b06a9ecb86e68309dc2e703bd90cdc4da745f",
+      "host": "keybase.io",
+      "key_id": "03bd90cdc4da745f",
+      "kid": "01012b4b035e9dbe841f24fafc8bdd94250ab38d94217a920cbedd223c43efedfe400a",
+      "uid": "5cba37a049a6fc84ecd0b3741ef5de19",
+      "username": "irinelflorescu"
+    },
+    "service": {
+      "hostname": "www.interiordelight.ro",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1525805831,
+  "expire_in": 157680000,
+  "prev": "837165ea9ee7b43555d5383f54afe2699e5954aadfcc089faf6a181d16f8a05e",
+  "seqno": 14,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.76
+Comment: https://keybase.io/crypto
+
+yMN8AnicZZJ7UBVVHMe5IhLXAOuGKYHoQhqCzL4fFMPgowGGIRCUmR5cd/ecveyA
+d297L6+ImuIy0cPAhtGoEQMtBAQKTMcoRoo7YEo2QnJBhcYakZFgFCtBmTpL+lf7
+z3ns9/c53+/vnL5AXx+zyfe7msG+MZfVdK73WKHPi7fm/MswSQOlWHwZlg+XBlgA
+oNNlzVcBFo/hBInLEqMooigogJZxFhdIRSRxiudkQYAikGVWYHEJkEDiCIVjZQ5K
+SCOTsowWJMdxuIjFYopqt0Hdoat2F8LKAifhrChAWeJZyPIULgCZhBxOSUDAZSDT
+QORoRkGFeZrTqEDmJNEJ41QN7aGF9T97/9c/9I2cS7SEUwwUgAR5mlBIWhEVmZcA
+EGiSwUWJ4o0ZwYmCERICQJKUTFNQgUCBNL7ku3AJx8iSSHEiTgsiixA0lAEuURxN
+QIUBkBAMoRPqdnEvRGoVpYQFSoGmQ6dciJXHYuhfkSpDo71Gnge64uLiONQPqKua
+DmCBastzxelGPoeuuTRZK0CaPJfL4Yw3GK5Sx1IRlKwPcFZJtQPUV1RRBHWnqtmx
+eAIpZZdq8AmGZHic4SkiFoMlDlWHVtVQMBzL4+gzzoFFCMlTHMEyEF0H5CSaYhgG
+MBRPKQwtKpBk0TUzApqLQJFlnBdQF1mR4AlAsAov4gzEjICv2jXEppFP0YaYTtVm
+F12FOsTKv+99ebmPyeyzwm+Z8eB8zAGrHj7Dd8eD7wfENm5KDjm1/BjJPhv9Y3E/
+tjd29vrWz6tMCyq+GBYeuevrnub0tVtyPbP9I60hH+T+lj7f1pM80Oh9u6JS3+j/
+/Fvtlt2OTZdpWPZca1HPiQJ3P+bT5hcWOfSRrWRYt3f611diT+9JrUpZf8FqSdSi
+P/4w6XhOw5PNasDpNfmbD7c3uNVh2+yvJ6KnNzRN7KivSJvs/aWr8J34sYUOy/Wj
+kT0X20xtDg9zyHttc1b+0Kd3ExLhhsE/A8uuRWw5FN21/pXBjo073TeufjYaVPp+
+4cx897me1oVdi83ESOgzj7ozt10MPR7Y8ULf6Yl1X2UkXfrC9Ig2Mfd6kgeCg7Xu
+lTk5l62Zp9IOYiGdWWkjufcqzwKsz7XIFp30ZL82kvpE0+0OJmjFfrbB7+a6boe4
+dfJopCllce2ZhAMJKaY7C/+MzVgqpnq8lk8sb6S3HMlY9PQFxaR+e6a/bqZ+lLpT
+vfPCSIrHnNc+MJlZPfXl41abKbS7duKpmKb04Z/eXDMenOWtGxuY90bcqNk9dfW9
+VbaoRN8M8/DvJXMRV0r3tewrL7t5L+rv1dvDbfvrHgu/lRxRk1MxHbbO3PHX2fbq
+uw3To0cu5Xu5qqGs4GzpZJc76Dy58krneInr52WBUd0Jq6sj/9jWur1mjzrAp50/
+oGfvqL1Nx8c0ai998wP0HA7MLLnf4jufi/8LiM3N6A==
+=DBQL
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/irinelflorescu
+
+==================================================================
