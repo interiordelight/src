@@ -1,18 +1,19 @@
-import React from 'react';
 import PropTypes from 'prop-types';
 
 import { colors } from '../config';
 
-const title = 'Let\'s talk';
+const title = "Let's talk";
 
 const CallToAction = ({ children }) => (
   <div className="container">
     {children}
-    <a className="call-to-action" href="/contact" title={`${title}!`}>{title}</a>
+    <a className="call-to-action" href="/contact" title={`${title}!`}>
+      {title}
+    </a>
     <style jsx>{`
       .container {
         text-align: center;
-        margin: 2em 0 .5em;
+        margin: 2em 0 0.5em;
       }
 
       .call-to-action {
@@ -23,7 +24,7 @@ const CallToAction = ({ children }) => (
         color: ${colors.darkGray};
         border: 2px solid ${colors.darkGray};
         padding: 0 16px;
-        transition: background .2s;
+        transition: background 0.2s;
 
         &:hover {
           color: white;

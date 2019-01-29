@@ -1,4 +1,3 @@
-import React from 'react';
 import Link from 'next/link';
 
 import { brand, tagline } from '../config';
@@ -25,7 +24,8 @@ export default () => (
         padding: 16px 0 8px;
       }
 
-      .brand, .tagline {
+      .brand,
+      .tagline {
         margin: 0;
         font-weight: 400;
       }

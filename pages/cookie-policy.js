@@ -1,5 +1,3 @@
-import React from 'react';
-
 import Layout from '../components/Layout';
 import CookiePolicyHead from '../components/CookiePolicyHead';
 import Content from '../components/Content';
@@ -14,30 +12,24 @@ export default () => (
     <Content>
       <Title text={title} />
       <p>
-        Before using this site, you should read this Policy carefully, as well as our
-        {' '}
-        <a href="/terms-and-conditions">Terms and Conditions</a>
-.
+        Before using this site, you should read this Policy carefully, as well as our{' '}
+        <a href="/terms-and-conditions">Terms and Conditions</a>.
       </p>
 
       <h4>Understanding how and why we use cookies</h4>
       <p>
-        We use cookies on
-        {' '}
+        We use cookies on{' '}
         <a href="/" title={domain}>
           {domain}
-        </a>
-        {' '}
+        </a>{' '}
         to create the most effective website possible for our users. Among other things, the cookies we use allow us to
         improve your experience when using our website and to ensure the website performs as you expect it to.
       </p>
       <p>
-        This cookie policy explains what cookies are, how we use them on
-        {' '}
+        This cookie policy explains what cookies are, how we use them on{' '}
         <a href="/" title={domain}>
           {domain}
-        </a>
-        {' '}
+        </a>{' '}
         and what benefits they bring.
       </p>
       <p>
@@ -82,8 +74,7 @@ export default () => (
         to &quot;cookies&quot; throughout, however is to include these alternate mechanisms.
       </p>
       <p>
-        More information about cookies can be found on
-        {' '}
+        More information about cookies can be found on{' '}
         <a href="http://www.allaboutcookies.org" target="_blank" rel="noopener noreferrer">
           allaboutcookies.org
         </a>
@@ -101,23 +92,19 @@ export default () => (
       </p>
       <p>
         When we include links to other websites, please bear in mind they will have their own privacy and cookie
-        policies that will govern the use of any information you submit. We recommend you read their policies as
-        {' '}
+        policies that will govern the use of any information you submit. We recommend you read their policies as{' '}
         <a href="/" title={domain}>
           {domain}
-        </a>
-        {' '}
+        </a>{' '}
         is not responsible or liable for their privacy practices.
       </p>
 
       <h4>How we work with trusted third parties</h4>
       <p>
-        Third parties are trusted suppliers to
-        {' '}
+        Third parties are trusted suppliers to{' '}
         <a href="/" title={domain}>
           {domain}
-        </a>
-        {' '}
+        </a>{' '}
         and include those partners who provide important functionality our website.
       </p>
       <p>We will not share any personal information gathered through cookies on this site with third parties.</p>
@@ -134,8 +121,7 @@ export default () => (
         choose to switch certain cookies off, it is likely to affect how our site works.
       </p>
       <p>
-        For more information about how to disable cookies, visit
-        {' '}
+        For more information about how to disable cookies, visit{' '}
         <a href="http://www.allaboutcookies.org" target="_blank" rel="noopener noreferrer">
           allaboutcookies.org
         </a>
@@ -145,16 +131,12 @@ export default () => (
       <h4>More about your privacy</h4>
 
       <p>
-        To find out more about how
-        {' '}
+        To find out more about how{' '}
         <a href="/" title={domain}>
           {domain}
-        </a>
-        {' '}
-        protects your privacy when using our website, see our website
-        {' '}
-        <a href="/terms-and-conditions">Terms and Conditions</a>
-.
+        </a>{' '}
+        protects your privacy when using our website, see our website{' '}
+        <a href="/terms-and-conditions">Terms and Conditions</a>.
       </p>
     </Content>
   </Layout>

@@ -1,4 +1,3 @@
-import React from 'react';
 import PropTypes from 'prop-types';
 
 import { domainUrl } from '../config';
@@ -12,11 +11,7 @@ const ProjectCover = ({ slug, title }) => {
   ].join(', ');
 
   return (
-    <div
-      itemScope
-      itemProp="image"
-      itemType="http://schema.org/ImageObject"
-    >
+    <div itemScope itemProp="image" itemType="http://schema.org/ImageObject">
       <meta itemProp="url" content={`${domainUrl}${coverOriginalSrc}`} />
       <img
         className="cover lazyload"

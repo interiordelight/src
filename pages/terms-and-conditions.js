@@ -1,5 +1,3 @@
-import React from 'react';
-
 import Layout from '../components/Layout';
 import TermsAndConditionsHead from '../components/TermsAndConditionsHead';
 import Content from '../components/Content';
@@ -14,39 +12,28 @@ export default () => (
     <Content>
       <Title text={title} />
       <p>
-        Before using this site, you should read these Terms carefully, as well as our
-        {' '}
-        <a href="/cookie-policy">Cookie Policy</a>
-.
+        Before using this site, you should read these Terms carefully, as well as our{' '}
+        <a href="/cookie-policy">Cookie Policy</a>.
       </p>
 
       <h4>About this website</h4>
       <p>
         The information contained on the site is for information purposes only. You cannot purchase products or services
-        from
-        {' '}
+        from{' '}
         <a href="/" title={domain}>
           {domain}
-        </a>
-        {' '}
+        </a>{' '}
         directly.
       </p>
 
       <h4>The provision of services</h4>
       <p>
-        If you want to know more about any of the products and services described on the site, we ask you to visit the
-        {' '}
-        <a href="/services.html">services</a>
-        {' '}
-page or
-        <a href="/contact.html">contact us</a>
-        {' '}
-directly. Some of the products and services described on
-        {' '}
+        If you want to know more about any of the products and services described on the site, we ask you to visit the{' '}
+        <a href="/services.html">services</a> page or
+        <a href="/contact.html">contact us</a> directly. Some of the products and services described on{' '}
         <a href="/" title={domain}>
           {domain}
-        </a>
-        {' '}
+        </a>{' '}
         may not be available in your location.
       </p>
       <p>
@@ -56,12 +43,10 @@ directly. Some of the products and services described on
 
       <h4>Changes</h4>
       <p>
-        The information, material and content provided in the pages of
-        {' '}
+        The information, material and content provided in the pages of{' '}
         <a href="/" title={domain}>
           {domain}
-        </a>
-        {' '}
+        </a>{' '}
         may be changed at any time without notice. Changes may be made to these Terms and Conditions by us at any time
         without notice to you by updating the posting of the Terms and Conditions.
       </p>
@@ -165,12 +150,10 @@ directly. Some of the products and services described on
 
       <h4>Social media</h4>
       <p>
-        The owners of
-        {' '}
+        The owners of{' '}
         <a href="/" title={domain}>
           {domain}
-        </a>
-        {' '}
+        </a>{' '}
         and other third parties may from time to time operate channels, pages and accounts on some social media sites to
         inform, assist and engage with customers and other users. Each operator of such a channel, page or account is
         responsible for such channel, page or account in accordance with the terms of use displayed on or linked from
@@ -180,12 +163,10 @@ directly. Some of the products and services described on
       </p>
       <ul>
         <li>
-          We may monitor and record comments and posts made on these channels about
-          {' '}
+          We may monitor and record comments and posts made on these channels about{' '}
           <a href="/" title={domain}>
             {domain}
-          </a>
-          {' '}
+          </a>{' '}
           so that we can improve our services.
         </li>
         <li>
@@ -195,8 +176,7 @@ directly. Some of the products and services described on
         </li>
         <li>
           The operation of such social media channels, pages and accounts does not constitute an offer of any products
-          or services provided by
-          {' '}
+          or services provided by{' '}
           <a href="/" title={domain}>
             {domain}
           </a>
@@ -213,12 +193,10 @@ directly. Some of the products and services described on
         <li>
           We regularly update and monitor our social media accounts and welcome feedback and ideas submitted via these
           channels. We may from time to time join the conversation on our social media channels, pages and accounts,
-          however cannot guarantee to read or reply to all messages sent to official
-          {' '}
+          however cannot guarantee to read or reply to all messages sent to official{' '}
           <a href="/" title={domain}>
             {domain}
-          </a>
-          {' '}
+          </a>{' '}
           social media accounts.
         </li>
       </ul>

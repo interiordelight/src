@@ -1,4 +1,3 @@
-import React from 'react';
 import PropTypes from 'prop-types';
 
 import ShareLink from './ShareLink';
@@ -25,8 +24,8 @@ const PictureGalleryFooter = ({ projectSlug, projectTitle, currentSlideSrc }) =>
         background: linear-gradient(to bottom, transparent, rgba(black, 50%));
         text-align: center;
         z-index: 1;
-        opacity: .5;
-        transition: opacity .5s;
+        opacity: 0.5;
+        transition: opacity 0.5s;
 
         &:hover {
           opacity: 1;

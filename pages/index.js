@@ -1,5 +1,3 @@
-import React from 'react';
-
 import Layout from '../components/Layout';
 import Hero from '../components/Hero';
 import Content from '../components/Content';
@@ -18,18 +16,15 @@ export default () => (
       <Title text="Featured projects" />
       <ProjectCards projects={featuredProjects} />
       <p>
-        Have a look at the
-        {' '}
+        Have a look at the{' '}
         <a href="/portfolio" title="Some of the things I did">
           portfolio
-        </a>
-        {' '}
+        </a>{' '}
         section to see more.
       </p>
       <Title text="What I do" />
       <p>
-        Based on
-        {' '}
+        Based on{' '}
         <a
           href="https://www.behance.net/iflorescu"
           title="See my Behance profile"
@@ -37,20 +32,16 @@ export default () => (
           rel="noopener noreferrer"
         >
           my experience
-        </a>
-        {' '}
+        </a>{' '}
         and a network of highly-skilled professional partners, I&apos;m offering top-quality interior design, 3D
-        modeling & visualization, furniture design and digital graphics & web development
-        {' '}
+        modeling & visualization, furniture design and digital graphics & web development{' '}
         <a href="/services" title="See what can I do">
           services
         </a>
-        . Check out the
-        {' '}
+        . Check out the{' '}
         <a href="/portfolio" title="See what I did">
           portfolio
-        </a>
-        {' '}
+        </a>{' '}
         section to see some samples of my work.
       </p>
       <Title text="My philosophy" />

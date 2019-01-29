@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import { Component } from 'react';
 import PropTypes from 'prop-types';
 
 export default class Hero extends Component {
@@ -6,12 +6,12 @@ export default class Hero extends Component {
     picture: PropTypes.string.isRequired,
     text: PropTypes.string,
     children: PropTypes.node
-  }
+  };
 
   static defaultProps = {
     text: null,
     children: null
-  }
+  };
 
   componentDidMount() {
     this.elBottom = this.el.getBoundingClientRect().bottom;
@@ -26,7 +26,11 @@ export default class Hero extends Component {
     const cssPosPercent = (1 - Math.min(1, window.scrollY / this.elBottom)) * 100;
     this.backgroundPositionY = `${cssPosPercent}%`;
     this.forceUpdate();
-  }
+  };
+
+  setRef = el => {
+    this.el = el;
+  };
 
   render() {
     const { picture, text, children } = this.props;
@@ -37,21 +41,20 @@ export default class Hero extends Component {
           backgroundImage: `url('/static/images/${picture}.jpg')`,
           backgroundPositionY: this.backgroundPositionY || '100%'
         }}
-        ref={(el) => { this.el = el; }}
+        ref={this.setRef}
       >
-        {
-          children ||
+        {children || (
           <div
             className="text"
             // eslint-disable-next-line react/no-danger
             dangerouslySetInnerHTML={{ __html: text.split('|').join('<br />') }}
           />
-        }
+        )}
         <style jsx>{`
           .container {
             text-align: center;
             padding: 10px 0;
-            background: center 100%/cover no-repeat;
+            background: center 100% / cover no-repeat;
           }
 
           .text {
@@ -78,11 +81,21 @@ export default class Hero extends Component {
           }
 
           @keyframes hero-text {
-            0% { transform: scale3d(1, 1, 1); }
-            2% { transform: scale3d(1.1, 1.1, 1); }
-            4% { transform: scale3d(1, 1, 1); }
-            6% { transform: scale3d(1.1, 1.1, 1); }
-            8% { transform: scale3d(1, 1, 1); }
+            0% {
+              transform: scale3d(1, 1, 1);
+            }
+            2% {
+              transform: scale3d(1.1, 1.1, 1);
+            }
+            4% {
+              transform: scale3d(1, 1, 1);
+            }
+            6% {
+              transform: scale3d(1.1, 1.1, 1);
+            }
+            8% {
+              transform: scale3d(1, 1, 1);
+            }
           }
         `}</style>
       </div>

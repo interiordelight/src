@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import { Component } from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import throttle from 'lodash.throttle';
@@ -23,12 +23,12 @@ export default class PictureGallery extends Component {
       on: PropTypes.func,
       removeListener: PropTypes.func
     }).isRequired
-  }
+  };
 
   state = {
     isOpen: false,
     currentSlideSrc: ''
-  }
+  };
 
   componentDidMount() {
     if (global.window) {
@@ -55,19 +55,19 @@ export default class PictureGallery extends Component {
     }
   }
 
-  open = (src) => {
+  open = src => {
     document.querySelector('body').style.overflow = 'hidden';
     history.pushState(null, '');
     this.setState({ isOpen: true });
     this.slideTo(src);
-  }
+  };
 
   ensureClosed = () => {
     document.querySelector('body').removeAttribute('style');
     this.setState({ isOpen: false });
-  }
+  };
 
-  onKeyDown = (e) => {
+  onKeyDown = e => {
     if (this.state.isOpen) {
       const { keyCode } = e;
       if ([ESC_KEY, LEFT_KEY, RIGHT_KEY].indexOf(keyCode) !== -1) {
@@ -82,9 +82,9 @@ export default class PictureGallery extends Component {
         e.preventDefault();
       }
     }
-  }
+  };
 
-  onWheel = (e) => {
+  onWheel = e => {
     if (this.state.isOpen) {
       if (e.deltaY > 0) {
         this.throttledNextSlide();
@@ -93,25 +93,33 @@ export default class PictureGallery extends Component {
       }
       e.preventDefault();
     }
-  }
+  };
 
-  onAfterSlide = (e) => {
+  onAfterSlide = e => {
     this.setState({ currentSlideSrc: this.props.pictures[e.detail.currentSlide - 1] });
-  }
+  };
 
-  throttledPrevSlide = throttle(() => {
-    this.slider.prev();
-  }, wheelThrottle, { trailing: false })
+  throttledPrevSlide = throttle(
+    () => {
+      this.slider.prev();
+    },
+    wheelThrottle,
+    { trailing: false }
+  );
 
-  throttledNextSlide = throttle(() => {
-    this.slider.next();
-  }, wheelThrottle, { trailing: false })
+  throttledNextSlide = throttle(
+    () => {
+      this.slider.next();
+    },
+    wheelThrottle,
+    { trailing: false }
+  );
 
-  slideTo = (src) => {
+  slideTo = src => {
     this.slider.slideTo(this.props.pictures.indexOf(src));
-  }
+  };
 
-  renderPicture = file => <PictureGallerySlide key={file} file={file} />
+  renderPicture = file => <PictureGallerySlide key={file} file={file} />;
 
   render() {
     const { projectSlug, projectTitle, pictures } = this.props;
@@ -126,9 +134,7 @@ export default class PictureGallery extends Component {
         />
         <div className="slider js_slider">
           <div className="frame js_frame">
-            <ul className="slides js_slides">
-              {pictures.map(this.renderPicture)}
-            </ul>
+            <ul className="slides js_slides">{pictures.map(this.renderPicture)}</ul>
           </div>
           <i className="icon icon-left js_prev" title="Next picture" />
           <i className="icon icon-right js_next" title="Previous picture" />
@@ -148,7 +154,7 @@ export default class PictureGallery extends Component {
             bottom: 0;
             opacity: 0;
             transform: translate3d(100%, 0, 0);
-            transition: opacity .5s;
+            transition: opacity 0.5s;
             background: rgba(black, 90%);
 
             &.active {
@@ -167,9 +173,9 @@ export default class PictureGallery extends Component {
             font-size: 48px;
             padding: 30px 6px;
             background: rgba(black, 24%);
-            transition: opacity .5s;
+            transition: opacity 0.5s;
             cursor: pointer;
-            opacity: .5;
+            opacity: 0.5;
 
             &:hover {
               opacity: 1;

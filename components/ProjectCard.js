@@ -1,4 +1,3 @@
-import React from 'react';
 import PropTypes from 'prop-types';
 import Link from 'next/link';
 
@@ -43,7 +42,7 @@ const ProjectCard = ({ slug, title, color }) => {
         .title {
           margin: 0;
           font-size: 16px;
-          padding: .5em .25em;
+          padding: 0.5em 0.25em;
           height: 48px;
 
           @media (min-width: 480px) {

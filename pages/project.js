@@ -1,6 +1,4 @@
-// TODO: add itemProp dates!!!...
-
-import React, { Component } from 'react';
+import { Component } from 'react';
 import PropTypes from 'prop-types';
 import sampleSize from 'lodash.samplesize';
 import EventEmitter from 'eventemitter3';
@@ -89,11 +87,7 @@ class Project extends Component {
           />
           <ProjectContent body={body} galleryEvents={this.galleryEvents} />
           <div className="author">
-            - by
-            {' '}
-            <ProjectPublisher />
-            {' '}
--
+            - by <ProjectPublisher /> -
           </div>
           <CallToAction>
             <hr style={{ background: `#${color}` }} />

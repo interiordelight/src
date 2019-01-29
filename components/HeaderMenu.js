@@ -1,4 +1,3 @@
-import React from 'react';
 import PropTypes from 'prop-types';
 
 import HeaderMenuItem from './HeaderMenuItem';
@@ -6,13 +5,7 @@ import { tagline } from '../config';
 
 const HeaderMenu = ({ activeItem }) => (
   <nav className="menu">
-    <HeaderMenuItem
-      href="/"
-      text="Home"
-      title={tagline}
-      iconName="home"
-      isActive={activeItem === 'home'}
-    />
+    <HeaderMenuItem href="/" text="Home" title={tagline} iconName="home" isActive={activeItem === 'home'} />
     <HeaderMenuItem
       href="/services"
       text="Services"

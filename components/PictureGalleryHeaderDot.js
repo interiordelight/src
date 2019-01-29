@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import { Component } from 'react';
 import PropTypes from 'prop-types';
 
 export default class PictureGalleryHeaderDot extends Component {
@@ -6,11 +6,11 @@ export default class PictureGalleryHeaderDot extends Component {
     src: PropTypes.string.isRequired,
     currentSlideSrc: PropTypes.string.isRequired,
     onDotClick: PropTypes.func.isRequired
-  }
+  };
 
   onClick = () => {
     this.props.onDotClick(this.props.src);
-  }
+  };
 
   render() {
     const { src, currentSlideSrc } = this.props;

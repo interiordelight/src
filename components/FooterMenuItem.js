@@ -1,4 +1,3 @@
-import React from 'react';
 import PropTypes from 'prop-types';
 import Link from 'next/link';
 
@@ -7,7 +6,9 @@ import { colors } from '../config';
 const FooterMenuItem = ({ href, text, title }) => (
   <span className="item">
     <Link href={href}>
-      <a className="link" title={title}>{text}</a>
+      <a className="link" title={title}>
+        {text}
+      </a>
     </Link>
     <style jsx>{`
       .item {

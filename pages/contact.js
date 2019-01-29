@@ -1,4 +1,3 @@
-import React from 'react';
 import Head from 'next/head';
 
 import Layout from '../components/Layout';
@@ -102,41 +101,41 @@ export default () => (
       </div>
       <style jsx>
         {`
-        .container {
-          background: rgba(white, 75%);
-          width: 90%;
-          padding: 10px;
-          margin: 50px auto;
+          .container {
+            background: rgba(white, 75%);
+            width: 90%;
+            padding: 10px;
+            margin: 50px auto;
 
-          @media (min-width: 480px) {
-            width: 420px;
+            @media (min-width: 480px) {
+              width: 420px;
+            }
+
+            @media (min-width: 768px) {
+              width: 600px;
+            }
           }
 
-          @media (min-width: 768px) {
-            width: 600px;
+          .picture {
+            border-radius: 50%;
           }
-        }
 
-        .picture {
-          border-radius: 50%;
-        }
-
-        .job {
-          color: ${colors.blue};
-          margin: 0 0 1em;
-        }
-
-        .separator {
-          height: 1px;
-          background: ${colors.lightGray};
-          max-width: 75%;
-
-          &.large {
-            margin: 10px -10px 30px;
-            max-width: initial;
+          .job {
+            color: ${colors.blue};
+            margin: 0 0 1em;
           }
-        }
-      `}
+
+          .separator {
+            height: 1px;
+            background: ${colors.lightGray};
+            max-width: 75%;
+
+            &.large {
+              margin: 10px -10px 30px;
+              max-width: initial;
+            }
+          }
+        `}
       </style>
     </Hero>
   </Layout>

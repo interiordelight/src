@@ -1,4 +1,3 @@
-import React from 'react';
 import PropTypes from 'prop-types';
 import Link from 'next/link';
 
@@ -12,12 +11,36 @@ const Footer = ({ showBanners }) => (
     <div className="container">
       <div className="content">
         <FooterMenu />
-        <div>By using this website you agree to the terms and conditions of our <Link href="/cookie-policy"><a className="link">cookie policy</a></Link>.</div>
+        <div>
+          By using this website you agree to the terms and conditions of our{' '}
+          <Link href="/cookie-policy">
+            <a className="link">cookie policy</a>
+          </Link>
+          .
+        </div>
       </div>
       <hr className="separator" />
       <div className="attribution">
-        <div>Developed by <a className="link" title="Website developer profile" href="https://github.com/icflorescu" target="_blank" rel="noopener noreferrer">Ionut Cristian Florescu.</a></div>
-        <div>© 2010 — {(new Date()).getFullYear()} <Link href="/"><a title={tagline} className="link">{domain}</a></Link></div>
+        <div>
+          Developed by{' '}
+          <a
+            className="link"
+            title="Website developer profile"
+            href="https://github.com/icflorescu"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Ionut Cristian Florescu.
+          </a>
+        </div>
+        <div>
+          © 2010 — {new Date().getFullYear()}{' '}
+          <Link href="/">
+            <a title={tagline} className="link">
+              {domain}
+            </a>
+          </Link>
+        </div>
       </div>
     </div>
     <style jsx>{`

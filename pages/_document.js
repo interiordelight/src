@@ -1,4 +1,3 @@
-import React from 'react';
 import Document, { Head, Main, NextScript } from 'next/document';
 // important: the styled-jsx module here must be the same version as the one included in next.js
 // eslint-disable-next-line import/no-extraneous-dependencies

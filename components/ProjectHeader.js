@@ -1,4 +1,3 @@
-import React from 'react';
 import PropTypes from 'prop-types';
 
 import ProjectHeaderLink from './ProjectHeaderLink';
@@ -10,12 +9,7 @@ const ProjectHeader = ({ title, color, description, prevProject, nextProject }) 
       <ProjectHeaderLink type="prev" project={prevProject} />
     </div>
     <div className="title">
-      <Title
-        text={title}
-        description={description}
-        underlineColor={`#${color}`}
-        itemProp="name"
-      />
+      <Title text={title} description={description} underlineColor={`#${color}`} itemProp="name" />
     </div>
     <div className="link-container">
       <ProjectHeaderLink type="next" project={nextProject} />

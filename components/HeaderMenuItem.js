@@ -1,4 +1,3 @@
-import React from 'react';
 import PropTypes from 'prop-types';
 import Link from 'next/link';
 import classNames from 'classnames';
@@ -7,10 +6,7 @@ import { colors } from '../config';
 
 const HeaderMenuItem = ({ href, text, title, iconName, isActive }) => (
   <Link href={href}>
-    <a
-      className={classNames('container', { active: isActive })}
-      title={title}
-    >
+    <a className={classNames('container', { active: isActive })} title={title}>
       <i className={`icon-${iconName} icon`} />
       <span className="text">{text}</span>
       <style jsx>{`
@@ -37,8 +33,8 @@ const HeaderMenuItem = ({ href, text, title, iconName, isActive }) => (
           }
         }
 
-
-        .icon, .text {
+        .icon,
+        .text {
           line-height: 48px;
         }
 

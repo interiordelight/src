@@ -1,15 +1,10 @@
-import React from 'react';
 import PropTypes from 'prop-types';
 
 const FooterBanner = ({ code, name, tld }) => (
   <div className="container">
-    <a
-      href={`http://www.${tld}`}
-      target="_blank"
-      rel="noopener noreferrer"
-      title={name}
-      className={`banner ${code}`}
-    >{name}</a>
+    <a href={`http://www.${tld}`} target="_blank" rel="noopener noreferrer" title={name} className={`banner ${code}`}>
+      {name}
+    </a>
     <style jsx>{`
       .container {
         flex: 1 0 auto;
@@ -32,7 +27,7 @@ const FooterBanner = ({ code, name, tld }) => (
         overflow: hidden;
         background: url('/static/images/partners.jpg');
         border: 2px solid white;
-        transition: background .25s;
+        transition: background 0.25s;
         margin: 0 10px 0;
       }
 

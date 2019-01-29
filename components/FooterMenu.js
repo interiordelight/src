@@ -1,5 +1,3 @@
-import React from 'react';
-
 import FooterMenuItem from './FooterMenuItem';
 import { tagline } from '../config';
 

@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import { Component } from 'react';
 import PropTypes from 'prop-types';
 import Link from 'next/link';
 import classNames from 'classnames';
@@ -12,21 +12,21 @@ export default class ProjectHeaderLink extends Component {
       slug: PropTypes.string,
       title: PropTypes.string
     })
-  }
+  };
 
   static defaultProps = {
     project: null
-  }
+  };
 
-  state = { hover: false }
+  state = { hover: false };
 
   onMouseEnter = () => {
     this.setState({ hover: true });
-  }
+  };
 
   onMouseLeave = () => {
     this.setState({ hover: false });
-  }
+  };
 
   render() {
     const { type, project } = this.props;
@@ -61,7 +61,7 @@ export default class ProjectHeaderLink extends Component {
               border: 2px solid ${colors.blue};
               border-radius: 50%;
               text-decoration: none;
-              transition: color .2s, background .2s;
+              transition: color 0.2s, background 0.2s;
 
               &.hover {
                 color: white;

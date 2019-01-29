@@ -1,11 +1,11 @@
-import React, { Component } from 'react';
+import { Component } from 'react';
 import PropTypes from 'prop-types';
 
 export default class ProjectContent extends Component {
   static propTypes = {
     body: PropTypes.string.isRequired,
     galleryEvents: PropTypes.shape({ emit: PropTypes.func }).isRequired
-  }
+  };
 
   componentDidMount() {
     this.contentEl.addEventListener('click', this.onContentClick);
@@ -15,16 +15,16 @@ export default class ProjectContent extends Component {
     this.contentEl.removeEventListener('click', this.onContentClick);
   }
 
-  onContentClick = (e) => {
+  onContentClick = e => {
     const { target } = e;
     if (target.matches('[data-gallery-item-src]')) {
       this.props.galleryEvents.emit('open', target.attributes['data-gallery-item-src'].nodeValue);
     }
-  }
+  };
 
-  contentRef = (el) => {
+  contentRef = el => {
     this.contentEl = el;
-  }
+  };
 
   render() {
     const { body } = this.props;

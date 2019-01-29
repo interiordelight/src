@@ -1,5 +1,3 @@
-import React from 'react';
-
 import Layout from '../components/Layout';
 import ServicesHead from '../components/ServicesHead';
 import Hero from '../components/Hero';
@@ -16,12 +14,10 @@ export default () => (
     <Content>
       <Title text={title} />
       <p>
-        Based on my extensive
-        {' '}
+        Based on my extensive{' '}
         <a href="https://www.behance.net/iflorescu" target="_blank" rel="noopener noreferrer">
           experience
-        </a>
-        {' '}
+        </a>{' '}
         in interior design, 3D modeling and visualization, and a network of top-level professional partners skilled in
         architectural drawings, photography, image post-processing, and even web design and development, I am offering
         the following services:
@@ -61,11 +57,7 @@ export default () => (
       <CallToAction>
         <hr />
         <p>
-          Have a look at my
-          {' '}
-          <a href="/portfolio">portfolio</a>
-          {' '}
-to see a few samples of our work. Or better yet…
+          Have a look at my <a href="/portfolio">portfolio</a> to see a few samples of our work. Or better yet…
         </p>
       </CallToAction>
     </Content>

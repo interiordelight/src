@@ -1,5 +1,3 @@
-import React from 'react';
-
 import FooterBanner from './FooterBanner';
 import { colors } from '../config';
 
@@ -31,7 +29,7 @@ export default () => (
 
       .title {
         color: white;
-        margin-bottom: .66em;
+        margin-bottom: 0.66em;
         border-bottom-color: white;
       }
 

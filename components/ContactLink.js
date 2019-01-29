@@ -1,16 +1,9 @@
-import React from 'react';
 import PropTypes from 'prop-types';
 
 import { colors } from '../config';
 
 const ContactLink = ({ type, href, title, detail }) => (
-  <a
-    className="link"
-    href={href}
-    target="_blank"
-    rel="noopener noreferrer"
-    title={title}
-  >
+  <a className="link" href={href} target="_blank" rel="noopener noreferrer" title={title}>
     <i className={`icon icon-${type}`} />
     {detail ? <div className="detail">{detail}</div> : null}
     <style jsx>{`
@@ -25,23 +18,23 @@ const ContactLink = ({ type, href, title, detail }) => (
           }
 
           .icon-skype {
-            background: ${colors.skype}
+            background: ${colors.skype};
           }
 
           .icon-behance {
-            background: ${colors.behance}
+            background: ${colors.behance};
           }
 
           .icon-linkedin {
-            background: ${colors.linkedin}
+            background: ${colors.linkedin};
           }
 
           .icon-facebook {
-            background: ${colors.facebook}
+            background: ${colors.facebook};
           }
 
           .icon-google {
-            background: ${colors.google}
+            background: ${colors.google};
           }
 
           .detail {
@@ -57,13 +50,13 @@ const ContactLink = ({ type, href, title, detail }) => (
         color: white;
         background: ${colors.mediumGray};
         border-radius: 50%;
-        transition: background .2s;
+        transition: background 0.2s;
         margin: 4px 12px;
       }
 
       .detail {
         color: ${colors.text};
-        transition: background .2s;
+        transition: background 0.2s;
       }
     `}</style>
   </a>

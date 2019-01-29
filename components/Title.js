@@ -1,4 +1,3 @@
-import React from 'react';
 import PropTypes from 'prop-types';
 
 const Title = ({ text, textColor, underlineColor, itemProp }) => (
@@ -9,7 +8,9 @@ const Title = ({ text, textColor, underlineColor, itemProp }) => (
         borderBottomColor: underlineColor
       }}
       itemProp={itemProp}
-    >{text}</h3>
+    >
+      {text}
+    </h3>
     <style jsx>{`
       .container {
         text-align: center;

@@ -1,15 +1,9 @@
-import React from 'react';
 import PropTypes from 'prop-types';
 
 import PictureGalleryHeaderDot from './PictureGalleryHeaderDot';
 
 const renderDot = (currentSlideSrc, onDotClick) => file => (
-  <PictureGalleryHeaderDot
-    key={file}
-    src={file}
-    currentSlideSrc={currentSlideSrc}
-    onDotClick={onDotClick}
-  />
+  <PictureGalleryHeaderDot key={file} src={file} currentSlideSrc={currentSlideSrc} onDotClick={onDotClick} />
 );
 
 const onCloseClick = () => history.back();
@@ -20,12 +14,7 @@ const PictureGalleryHeader = ({ projectTitle, pictures, currentSlideSrc, onDotCl
       <div className="text">{projectTitle}</div>
       <div className="dots">{pictures.map(renderDot(currentSlideSrc, onDotClick))}</div>
     </div>
-    <i
-      className="icon icon-close"
-      role="button"
-      tabIndex="0"
-      onClick={onCloseClick}
-    />
+    <i className="icon icon-close" role="button" tabIndex="0" onClick={onCloseClick} />
     <style jsx>{`
       .container {
         position: absolute;
@@ -36,10 +25,10 @@ const PictureGalleryHeader = ({ projectTitle, pictures, currentSlideSrc, onDotCl
         z-index: 1;
         color: white;
         background: linear-gradient(to bottom, rgba(black, 50%), transparent);
-        transition: opacity .5s;
+        transition: opacity 0.5s;
         display: flex;
         align-items: flex-start;
-        opacity: .5;
+        opacity: 0.5;
 
         &:hover {
           opacity: 1;

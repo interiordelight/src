@@ -1,4 +1,3 @@
-import React from 'react';
 import PropTypes from 'prop-types';
 
 import ShareLink from './ShareLink';
@@ -6,21 +5,13 @@ import { domain, domainUrl } from '../config';
 
 const ProjectShareLinks = ({ url, title, absoluteCoverUrl, description }) => (
   <div className="container">
-    <ShareLink
-      type="facebook"
-      title={`Share «${title}» project on Facebook`}
-      params={{ u: url }}
-    />
+    <ShareLink type="facebook" title={`Share «${title}» project on Facebook`} params={{ u: url }} />
     <ShareLink
       type="twitter"
       title={`Tweet about «${title}» project`}
       params={{ text: title, url, hashtags: 'design, visualization, 3d', via: 'iriflorescu' }}
     />
-    <ShareLink
-      type="google"
-      title={`Share «${title}» project on Google+`}
-      params={{ url }}
-    />
+    <ShareLink type="google" title={`Share «${title}» project on Google+`} params={{ url }} />
     <ShareLink
       type="pinterest"
       title={`Pin «${title}» project cover picture`}
