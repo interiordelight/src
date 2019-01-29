@@ -13,22 +13,22 @@ const dstPath = `${root}/projects-json`;
 marked.setOptions({ smartypants: true });
 const renderer = new marked.Renderer();
 
-const imageRenderer = slug => (href, _title, text) => {
+const buildImageRenderer = slug => (href, _title, text) => {
   const prefix = `${slug}-${slugify(text)}`;
   const thumbnailPrefix = `/static/pics/t/${prefix}`;
   return (
-    '<div class="pic">'
-    + '<img'
-    + ' class="lazyload image"'
-    + ` alt="${text}" title="${text}"`
-    + ` src="${thumbnailPrefix}-20x20.jpg"`
-    + ' data-sizes="auto"'
-    + ` data-srcset="${thumbnailPrefix}-230x230.jpg 230w, ${thumbnailPrefix}-460x460.jpg 460w"`
-    + ` data-src="${thumbnailPrefix}-230x230.jpg"`
+    '<div class="pic">' +
+    '<img' +
+    ' class="lazyload image"' +
+    ` alt="${text}" title="${text}"` +
+    ` src="${thumbnailPrefix}-20x20.jpg"` +
+    ' data-sizes="auto"' +
+    ` data-srcset="${thumbnailPrefix}-230x230.jpg 230w, ${thumbnailPrefix}-460x460.jpg 460w"` +
+    ` data-src="${thumbnailPrefix}-230x230.jpg"` +
     // by convention, our href holds the original file extension
-    + ` data-gallery-item-src="${prefix}.${href}"`
-    + '>'
-    + '</div>'
+    ` data-gallery-item-src="${prefix}.${href}"` +
+    '>' +
+    '</div>'
   );
 };
 
@@ -58,7 +58,7 @@ readdirSync(srcPath)
     const slug = fileName.slice(3, -3);
     const { title, color, description } = content.attributes;
 
-    renderer.image = imageRenderer(slug);
+    renderer.image = buildImageRenderer(slug);
 
     const gallery = buildPictureGallery(slug, content.body);
 
