@@ -24,28 +24,18 @@ export const colors = {
 };
 
 export const iconLinks = [
-  <link
-    key="shortcut-icon"
-    rel="shortcut icon"
-    type="image/x-icon"
-    href="/static/icons/favicon.ico"
-  />,
-  ...([32, 16, 36, 48, 72, 96, 144, 192].map(size => (
-    <link
-      key={`icon-${size}`}
-      rel="icon"
-      type="image/png"
-      href={`/static/icons/icon-${size}x${size}.png`}
-    />
-  ))),
-  ...([57, 60, 72, 76, 114, 120, 144, 152, 180].map(size => (
+  <link key="shortcut-icon" rel="shortcut icon" type="image/x-icon" href="/static/icons/favicon.ico" />,
+  ...[32, 16, 36, 48, 72, 96, 144, 192].map(size => (
+    <link key={`icon-${size}`} rel="icon" type="image/png" href={`/static/icons/icon-${size}x${size}.png`} />
+  )),
+  ...[57, 60, 72, 76, 114, 120, 144, 152, 180].map(size => (
     <link
       key={`apple-icon-${size}`}
       rel="apple-touch-icon"
       type="image/png"
       href={`/static/icons/icon-apple-${size}x${size}.png`}
     />
-  )))
+  ))
 ];
 
 export const shareLinks = {

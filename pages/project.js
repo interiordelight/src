@@ -32,22 +32,24 @@ class Project extends Component {
     description: PropTypes.string.isRequired,
     body: PropTypes.string.isRequired,
     gallery: PropTypes.arrayOf(PropTypes.string).isRequired,
-    otherProjects: PropTypes.arrayOf(PropTypes.shape({
-      slug: PropTypes.string,
-      title: PropTypes.string,
-      color: PropTypes.string
-    })).isRequired,
-    prevProject: PropTypes.shape({}),
-    nextProject: PropTypes.shape({})
-  }
+    otherProjects: PropTypes.arrayOf(
+      PropTypes.shape({
+        slug: PropTypes.string,
+        title: PropTypes.string,
+        color: PropTypes.string
+      })
+    ).isRequired,
+    prevProject: PropTypes.shape(),
+    nextProject: PropTypes.shape()
+  };
 
   static defaultProps = {
     prevProject: null,
     nextProject: null
-  }
+  };
 
   static getInitialProps({ query: { slug } }) {
-    const projectSummary = projects.find(({ slug: projectSlug }) => (projectSlug === slug));
+    const projectSummary = projects.find(({ slug: projectSlug }) => projectSlug === slug);
     // eslint-disable-next-line global-require, import/no-dynamic-require
     const projectData = require(`../projects-json/${slug}.json`);
     // randomly pick 4 other projects
@@ -58,17 +60,10 @@ class Project extends Component {
   galleryEvents = new EventEmitter();
 
   render() {
-    const {
-      slug, title, color, description, body, gallery, otherProjects, prevProject, nextProject
-    } = this.props;
+    const { slug, title, color, description, body, gallery, otherProjects, prevProject, nextProject } = this.props;
     return (
       <Layout title={title} activeMenuItem="portfolio">
-        <ProjectHead
-          slug={slug}
-          title={title}
-          description={description}
-          otherProjects={otherProjects}
-        />
+        <ProjectHead slug={slug} title={title} description={description} otherProjects={otherProjects} />
         <Content>
           <ProjectHeader
             title={title}
@@ -94,7 +89,11 @@ class Project extends Component {
           />
           <ProjectContent body={body} galleryEvents={this.galleryEvents} />
           <div className="author">
-            - by <ProjectPublisher /> -
+            - by
+            {' '}
+            <ProjectPublisher />
+            {' '}
+-
           </div>
           <CallToAction>
             <hr style={{ background: `#${color}` }} />
@@ -110,30 +109,28 @@ class Project extends Component {
           />
         </Content>
         <Content backgroundColor={colors.mediumGray}>
-          <Title
-            text="See other projects"
-            textColor="white"
-            underlineColor="white"
-          />
+          <Title text="See other projects" textColor="white" underlineColor="white" />
           <ProjectCards projects={otherProjects} />
         </Content>
-        <style jsx>{`
-          .description {
-            margin: .5em 0;
-            color: ${colors.darkGray};
-            text-align: center;
-            font-size: 16px;
+        <style jsx>
+          {`
+            .description {
+              margin: 0.5em 0;
+              color: ${colors.darkGray};
+              text-align: center;
+              font-size: 16px;
 
-            @media (min-width: 768px) {
-              font-size: 20px;
+              @media (min-width: 768px) {
+                font-size: 20px;
+              }
             }
-          }
 
-          .author {
-            margin: 1em;
-            text-align: center;
-          }
-        `}</style>
+            .author {
+              margin: 1em;
+              text-align: center;
+            }
+          `}
+        </style>
       </Layout>
     );
   }
