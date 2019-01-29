@@ -4,7 +4,7 @@ export const appName = 'InteriorDelight.cc';
 export const brand = 'Interior Delight';
 export const tagline = 'Interior design and visualization done right.';
 export const domain = 'interiordelight.cc';
-export const domainUrl = `http://www.${domain}`;
+export const domainUrl = `https://${domain}`;
 
 export const colors = {
   blue: '#00849b',
