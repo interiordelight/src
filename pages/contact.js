@@ -65,7 +65,7 @@ export default () => (
               'url': domainUrl,
               'sameAs': [
                 'https://www.behance.net/iflorescu',
-                'https://www.facebook.com/interiordelight.ro',
+                'https://www.facebook.com/interiordelight.cc',
                 'https://linkedin.com/in/iriflorescu',
                 'https://plus.google.com/+IrinelRamonaFlorescu'
               ]
