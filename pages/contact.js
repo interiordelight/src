@@ -10,6 +10,7 @@ export default () => (
     <Head>
       <meta
         name="description"
+        // eslint-disable-next-line max-len
         content="Contact me if you're looking for professional interior design, decoration, visualization, 3D modeling, rendering and post-processing"
       />
       <meta
@@ -60,9 +61,9 @@ export default () => (
             __html: JSON.stringify({
               '@context': 'http://schema.org',
               '@type': 'Person',
-              name: 'Irinel-Ramona Florescu',
-              url: domainUrl,
-              sameAs: [
+              'name': 'Irinel-Ramona Florescu',
+              'url': domainUrl,
+              'sameAs': [
                 'https://www.behance.net/iflorescu',
                 'https://www.facebook.com/interiordelight.ro',
                 'https://linkedin.com/in/iriflorescu',
@@ -87,9 +88,9 @@ export default () => (
             __html: JSON.stringify({
               '@context': 'http://schema.org',
               '@type': 'Person',
-              name: 'Ionut-Cristian Florescu',
-              url: domainUrl,
-              sameAs: [
+              'name': 'Ionut-Cristian Florescu',
+              'url': domainUrl,
+              'sameAs': [
                 'https://github.com/icflorescu',
                 'https://linkedin.com/in/icflorescu',
                 'https://www.facebook.com/icflorescu',

@@ -28,6 +28,7 @@ export default () => (
 
       <h4>The provision of services</h4>
       <p>
+        {/* eslint-disable-next-line max-len */}
         If you want to know more about any of the products and services described on the site, we ask you to visit the{' '}
         <a href="/services.html">services</a> page or
         <a href="/contact.html">contact us</a> directly. Some of the products and services described on{' '}

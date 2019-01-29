@@ -16,6 +16,7 @@ export default class PictureGalleryHeaderDot extends Component {
     const { src, currentSlideSrc } = this.props;
     const isCurrent = src === currentSlideSrc;
     return (
+      // eslint-disable-next-line jsx-a11y/click-events-have-key-events
       <div
         className="dot"
         style={{

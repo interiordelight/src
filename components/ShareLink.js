@@ -19,11 +19,9 @@ export default class ShareLink extends Component {
     const { type, params } = this.props;
     const { width, height, url } = shareLinks[type];
     // eslint-disable-next-line prefer-template
-    const popupUrl =
-      `${url}?` +
-      Object.keys(params)
-        .map(key => `${key}=${encodeURIComponent(params[key])}`)
-        .join('&');
+    const popupUrl = `${url}?${Object.keys(params)
+      .map(key => `${key}=${encodeURIComponent(params[key])}`)
+      .join('&')}`;
 
     const popup = window.open(popupUrl, 'share', `width=${width},height=${height}`);
     popup.moveTo((screen.width - width) / 2, (screen.height - height) / 2);

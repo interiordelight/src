@@ -28,7 +28,7 @@ export default class Hero extends Component {
     this.forceUpdate();
   };
 
-  setRef = el => {
+  setRef = (el) => {
     this.el = el;
   };
 

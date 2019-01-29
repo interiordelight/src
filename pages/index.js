@@ -75,8 +75,8 @@ export default () => (
         __html: JSON.stringify({
           '@context': 'http://schema.org',
           '@type': 'Organization',
-          url: domainUrl,
-          logo: `${domainUrl}/static/images/interior-delight-logo.png`
+          'url': domainUrl,
+          'logo': `${domainUrl}/static/images/interior-delight-logo.png`
         })
       }}
     />

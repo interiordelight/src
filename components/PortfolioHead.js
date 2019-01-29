@@ -17,6 +17,7 @@ export default () => (
   <Head>
     <meta
       name="description"
+      // eslint-disable-next-line max-len
       content="See my portfolio of professional interior design, decoration, visualization, 3D modeling, rendering and post-processing"
     />
     <meta
@@ -29,6 +30,7 @@ export default () => (
     <meta name="twitter:title" content="InteriorDelight.RO Portfolio" />
     <meta
       name="twitter:description"
+      // eslint-disable-next-line max-len
       content="See my portfolio of professional interior design, decoration, visualization, 3D modeling, rendering and post-processing."
     />
     {twitterImageIndexes.map(renderTwitterImage)}
@@ -36,6 +38,7 @@ export default () => (
     <meta property="og:title" content="Portfolio" />
     <meta
       property="og:description"
+      // eslint-disable-next-line max-len
       content="See my portfolio of professional interior design, decoration, visualization, 3D modeling, rendering and post-processing"
     />
     <meta property="og:type" content="article" />

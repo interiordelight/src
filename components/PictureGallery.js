@@ -30,6 +30,22 @@ export default class PictureGallery extends Component {
     currentSlideSrc: ''
   };
 
+  throttledPrevSlide = throttle(
+    () => {
+      this.slider.prev();
+    },
+    wheelThrottle,
+    { trailing: false }
+  );
+
+  throttledNextSlide = throttle(
+    () => {
+      this.slider.next();
+    },
+    wheelThrottle,
+    { trailing: false }
+  );
+
   componentDidMount() {
     if (global.window) {
       this.sliderEl = document.querySelector('.js_slider');
@@ -55,7 +71,7 @@ export default class PictureGallery extends Component {
     }
   }
 
-  open = src => {
+  open = (src) => {
     document.querySelector('body').style.overflow = 'hidden';
     history.pushState(null, '');
     this.setState({ isOpen: true });
@@ -67,7 +83,7 @@ export default class PictureGallery extends Component {
     this.setState({ isOpen: false });
   };
 
-  onKeyDown = e => {
+  onKeyDown = (e) => {
     if (this.state.isOpen) {
       const { keyCode } = e;
       if ([ESC_KEY, LEFT_KEY, RIGHT_KEY].indexOf(keyCode) !== -1) {
@@ -84,7 +100,7 @@ export default class PictureGallery extends Component {
     }
   };
 
-  onWheel = e => {
+  onWheel = (e) => {
     if (this.state.isOpen) {
       if (e.deltaY > 0) {
         this.throttledNextSlide();
@@ -95,27 +111,11 @@ export default class PictureGallery extends Component {
     }
   };
 
-  onAfterSlide = e => {
+  onAfterSlide = (e) => {
     this.setState({ currentSlideSrc: this.props.pictures[e.detail.currentSlide - 1] });
   };
 
-  throttledPrevSlide = throttle(
-    () => {
-      this.slider.prev();
-    },
-    wheelThrottle,
-    { trailing: false }
-  );
-
-  throttledNextSlide = throttle(
-    () => {
-      this.slider.next();
-    },
-    wheelThrottle,
-    { trailing: false }
-  );
-
-  slideTo = src => {
+  slideTo = (src) => {
     this.slider.slideTo(this.props.pictures.indexOf(src));
   };
 

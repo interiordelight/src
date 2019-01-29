@@ -14,6 +14,7 @@ const PictureGalleryHeader = ({ projectTitle, pictures, currentSlideSrc, onDotCl
       <div className="text">{projectTitle}</div>
       <div className="dots">{pictures.map(renderDot(currentSlideSrc, onDotClick))}</div>
     </div>
+    {/* eslint-disable-next-line jsx-a11y/click-events-have-key-events */}
     <i className="icon icon-close" role="button" tabIndex="0" onClick={onCloseClick} />
     <style jsx>{`
       .container {

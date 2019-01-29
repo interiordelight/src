@@ -15,14 +15,14 @@ export default class ProjectContent extends Component {
     this.contentEl.removeEventListener('click', this.onContentClick);
   }
 
-  onContentClick = e => {
+  onContentClick = (e) => {
     const { target } = e;
     if (target.matches('[data-gallery-item-src]')) {
       this.props.galleryEvents.emit('open', target.attributes['data-gallery-item-src'].nodeValue);
     }
   };
 
-  contentRef = el => {
+  contentRef = (el) => {
     this.contentEl = el;
   };
 

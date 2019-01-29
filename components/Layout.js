@@ -12,7 +12,7 @@ if (global.window) {
 
   const htmlEl = document.getElementsByTagName('html')[0];
   // eslint-disable-next-line global-require
-  require('next/router').default.onRouteChangeComplete = url => {
+  require('next/router').default.onRouteChangeComplete = (url) => {
     // just for consistency, since this doesn't really matter on the client side
     htmlEl.setAttribute('itemType', getItemType(url));
     global.ga('send', 'pageview', url);
