@@ -7,6 +7,18 @@ import { domain, domainUrl, colors } from '../config';
 import getItemType from '../utils/getItemType';
 
 if (global.window) {
+  /* eslint-disable no-console, max-len */
+  console.log(
+    [
+      '%cHi there!',
+      "This is not a theme slapped on top of a Wordpress deployment. It's a custom-made web application carefully crafted with React, Next.js, Node.js and a secret medley of unholy magic powders by Ionut-Cristian Florescu.",
+      "He's a nice guy and an outstanding developer.",
+      "If you're seeing this, you're most likely interested in his work or want to build something similar. So... why don't you try to approach him at https://linkedin.com/in/icflorescu instead of just staring at the console?"
+    ].join('\n\n'),
+    'font-size: 140%; color: #165b67; line-height: 1.5'
+  );
+  /* eslint-enable */
+
   // eslint-disable-next-line global-require
   if (!global.window.lazySizes) require('lazysizes');
 
