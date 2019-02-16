@@ -50,10 +50,9 @@ export default () => (
         <ContactLink type="linkedin" href="https://linkedin.com/in/iriflorescu" title="LinkedIn profile" />
         <ContactLink
           type="facebook"
-          href="https://www.facebook.com/interiordelight.ro"
+          href="https://www.facebook.com/interiordelight.cc"
           title="Official Facebook page"
         />
-        <ContactLink type="google" href="https://plus.google.com/+IrinelRamonaFlorescu" title="Google+ profile" />
         <script
           type="application/ld+json"
           // eslint-disable-next-line react/no-danger
@@ -66,8 +65,7 @@ export default () => (
               'sameAs': [
                 'https://www.behance.net/iflorescu',
                 'https://www.facebook.com/interiordelight.cc',
-                'https://linkedin.com/in/iriflorescu',
-                'https://plus.google.com/+IrinelRamonaFlorescu'
+                'https://linkedin.com/in/iriflorescu'
               ]
             })
           }}
@@ -80,7 +78,6 @@ export default () => (
         <ContactLink type="github" href="https://github.com/icflorescu" title="GitHub profile" />
         <ContactLink type="linkedin" href="https://linkedin.com/in/icflorescu" title="LinkedIn profile" />
         <ContactLink type="facebook" href="https://www.facebook.com/icflorescu" title="Facebook page" />
-        <ContactLink type="google" href="https://plus.google.com/+IonutCristianFlorescu" title="Google+ profile" />
         <script
           type="application/ld+json"
           // eslint-disable-next-line react/no-danger
@@ -93,8 +90,7 @@ export default () => (
               'sameAs': [
                 'https://github.com/icflorescu',
                 'https://linkedin.com/in/icflorescu',
-                'https://www.facebook.com/icflorescu',
-                'https://plus.google.com/+IonutCristianFlorescu'
+                'https://www.facebook.com/icflorescu'
               ]
             })
           }}

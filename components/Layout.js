@@ -15,7 +15,7 @@ if (global.window) {
       "He's a nice guy and an outstanding developer.",
       "If you're seeing this, you're most likely interested in his work or want to build something similar. So... why don't you try to approach him at https://linkedin.com/in/icflorescu instead of just staring at the console?"
     ].join('\n\n'),
-    'font-size: 140%; color: #165b67; line-height: 1.5'
+    'font-size: 140%; color: #133542; line-height: 1.5'
   );
   /* eslint-enable */
 
