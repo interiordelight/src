@@ -39,6 +39,8 @@ module.exports = {
     'react/jsx-closing-tag-location': 'off',
     'react/destructuring-assignment': 'off',
     'react/button-has-type': 'off',
+    'react/state-in-constructor': 'off',
+    'react/static-property-placement': 'off',
     'jsx-a11y/anchor-is-valid': ['error', { aspects: ['invalidHref', 'preferButton'] }],
     'jsx-a11y/label-has-for': 'off',
     'jsx-a11y/label-has-associated-control': 'off'

@@ -39,7 +39,7 @@ export default class ProjectHeaderLink extends Component {
     const { hover } = this.state;
 
     return (
-      <Link href={`/project?slug=${slug}`} as={`/portfolio/${slug}`} prefetch>
+      <Link href={`/project?slug=${slug}`} as={`/portfolio/${slug}`}>
         <a
           className={classNames('link', { hover })}
           title={`See a newer project: «${title}»`}

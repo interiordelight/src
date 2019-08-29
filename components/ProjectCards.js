@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import Cards from './Cards';
 import ProjectCard from './ProjectCard';
 
+// eslint-disable-next-line react/jsx-props-no-spreading
 const renderProjectCard = project => <ProjectCard key={project.index} {...project} />;
 
 const ProjectCards = ({ projects }) => <Cards>{projects.map(renderProjectCard)}</Cards>;
