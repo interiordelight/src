@@ -7,7 +7,7 @@ const ProjectCard = ({ slug, title, color }) => {
   const picPrefix = `/static/pics/t/${slug}-cover`;
   return (
     <Card>
-      <Link href={`/project?slug=${slug}`} as={`/portfolio/${slug}`} prefetch>
+      <Link href={`/project?slug=${slug}`} as={`/portfolio/${slug}`}>
         <a className="link" title={title} style={{ background: `#${color}` }}>
           <img
             className="cover lazyload"
