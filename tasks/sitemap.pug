@@ -9,20 +9,20 @@ urlset(xmlns="http://www.sitemaps.org/schemas/sitemap/0.9")
 
   each page in ['services', 'contact', 'terms-and-conditions', 'cookie-policy']
     url
-      loc #{root}/#{page}/
+      loc #{root}/#{page}
       lastmod= now
       changefreq weekly
       priority= 0.5
 
   url
-    loc #{root}/portfolio/
+    loc #{root}/portfolio
     lastmod= now
     changefreq weekly
     priority= 0.8
 
   each project in projects
     url
-      loc #{root}/portfolio/#{project}/
+      loc #{root}/portfolio/#{project}
       lastmod= now
       changefreq weekly
       priority= 0.6
