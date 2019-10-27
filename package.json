@@ -16,7 +16,16 @@
     "deploy": "sh deploy.sh"
   },
   "dependencies": {
+    "babel-eslint": "^10.0.3",
+    "chokidar-cli": "^2.0.0",
     "classnames": "^2.2.6",
+    "eslint": "^6.6.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-config-prettier": "^6.5.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-react": "^7.16.0",
     "eventemitter3": "^4.0.0",
     "express": "^4.17.1",
     "front-matter": "^3.0.2",
@@ -27,25 +36,15 @@
     "marked": "0.3.19",
     "mkdirp": "^0.5.1",
     "next": "^9.1.1",
+    "npm-run-all": "^4.1.5",
     "prop-types": "^15.7.2",
     "pug": "^2.0.4",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
     "rimraf": "^3.0.0",
-    "underscore.string": "^3.3.5"
-  },
-  "devDependencies": {
-    "babel-eslint": "^10.0.3",
-    "chokidar-cli": "^2.0.0",
-    "eslint": "^6.6.0",
-    "eslint-config-airbnb": "^18.0.1",
-    "eslint-config-prettier": "^6.5.0",
-    "eslint-plugin-import": "^2.18.2",
-    "eslint-plugin-jsx-a11y": "^6.2.3",
-    "eslint-plugin-prettier": "^3.1.1",
-    "eslint-plugin-react": "^7.16.0",
-    "npm-run-all": "^4.1.5",
+    "styled-jsx": "^3.2.3",
     "styled-jsx-plugin-stylus": "^0.0.4",
-    "stylus": "^0.54.7"
+    "stylus": "^0.54.7",
+    "underscore.string": "^3.3.5"
   }
 }
