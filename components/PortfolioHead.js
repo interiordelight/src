@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import { domain } from '../config';
+import { domain, domainUrl } from '../config';
 
 export default () => (
   <Head>
