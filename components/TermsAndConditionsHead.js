@@ -12,5 +12,6 @@ export default () => (
       // eslint-disable-next-line max-len
       content="interior design, 3d, modeling, rendering, post processing, rhino, vray, maxwell, photoshop, terms, conditions"
     />
+    <meta property="og:image" content={`${domainUrl}/static/images/interiordelight-og-image.jpg`} />
   </Head>
 );

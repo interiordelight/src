@@ -1,9 +1,8 @@
-import PropTypes from 'prop-types';
 import Link from 'next/link';
-
-import FooterMenu from './FooterMenu';
+import PropTypes from 'prop-types';
+import { colors, domain, tagline } from '../config';
 import FooterBanners from './FooterBanners';
-import { domain, tagline, colors } from '../config';
+import FooterMenu from './FooterMenu';
 
 const Footer = ({ showBanners }) => (
   <footer className="footer">
@@ -105,7 +104,7 @@ const Footer = ({ showBanners }) => (
 );
 
 Footer.propTypes = {
-  showBanners: PropTypes.bool.isRequired
+  showBanners: PropTypes.bool.isRequired,
 };
 
 export default Footer;

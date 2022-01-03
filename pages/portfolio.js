@@ -1,17 +1,17 @@
+import CallToAction from '../components/CallToAction';
+import Content from '../components/Content';
+import Hero from '../components/Hero';
 import Layout from '../components/Layout';
 import PortfolioHead from '../components/PortfolioHead';
-import Hero from '../components/Hero';
-import Content from '../components/Content';
-import Title from '../components/Title';
 import ProjectCards from '../components/ProjectCards';
-import CallToAction from '../components/CallToAction';
+import Title from '../components/Title';
 import { domainUrl } from '../config';
 import projects from '../projects-json/index.json';
 
 const projectListItemLdJson = ({ slug }, index) => ({
   '@type': 'ListItem',
   'position': index + 1,
-  'url': `${domainUrl}/portfolio/${slug}/`
+  'url': `${domainUrl}/portfolio/${slug}/`,
 });
 
 export default () => (
@@ -33,8 +33,8 @@ export default () => (
         __html: JSON.stringify({
           '@context': 'http://schema.org',
           '@type': 'ItemList',
-          'itemListElement': projects.map(projectListItemLdJson)
-        })
+          'itemListElement': projects.map(projectListItemLdJson),
+        }),
       }}
     />
   </Layout>

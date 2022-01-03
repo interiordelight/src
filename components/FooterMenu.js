@@ -1,5 +1,5 @@
-import FooterMenuItem from './FooterMenuItem';
 import { tagline } from '../config';
+import FooterMenuItem from './FooterMenuItem';
 
 export default () => (
   <nav>

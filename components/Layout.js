@@ -1,11 +1,10 @@
-import PropTypes from 'prop-types';
 import Head from 'next/head';
-
-import icons from './Layout.icons';
-import Header from './Header';
-import Footer from './Footer';
-import { domain, domainUrl, colors } from '../config';
+import PropTypes from 'prop-types';
+import { colors, domain } from '../config';
 import getItemType from '../utils/getItemType';
+import Footer from './Footer';
+import Header from './Header';
+import icons from './Layout.icons';
 
 if (global.window) {
   /* eslint-disable no-console, max-len */
@@ -14,7 +13,7 @@ if (global.window) {
       '%cHi there!',
       "This is not a theme slapped on top of a Wordpress deployment. It's a custom-made web application carefully crafted with React, Next.js, Node.js and a secret medley of unholy magic powders by Ionut-Cristian Florescu.",
       "He's a nice guy and an outstanding developer.",
-      "If you're seeing this, you're most likely interested in his work or want to build something similar. So... why don't you try to approach him at https://linkedin.com/in/icflorescu instead of just staring at the console?"
+      "If you're seeing this, you're most likely interested in his work or want to build something similar. So... why don't you try to approach him at https://linkedin.com/in/icflorescu instead of just staring at the console?",
     ].join('\n\n'),
     'font-size: 140%; color: #133542; line-height: 1.5'
   );
@@ -48,7 +47,6 @@ const Layout = ({ title, activeMenuItem, showFooterBanners, children }) => (
         content="interior design, 3d, modeling, rendering, post processing, rhino, vray, maxwell, photoshop"
       />
       <meta property="og:title" content="Interior design and visualization done right" />
-      <meta property="og:image" content={`${domainUrl}/static/images/interiordelight-og-image.jpg`} />
       <meta
         property="og:description"
         content="Professional interior design, decoration, visualization, 3D modeling, rendering and post-processing"
@@ -131,12 +129,12 @@ Layout.propTypes = {
   title: PropTypes.string.isRequired,
   activeMenuItem: PropTypes.string,
   showFooterBanners: PropTypes.bool,
-  children: PropTypes.node.isRequired
+  children: PropTypes.node.isRequired,
 };
 
 Layout.defaultProps = {
   activeMenuItem: null,
-  showFooterBanners: false
+  showFooterBanners: false,
 };
 
 export default Layout;

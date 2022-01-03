@@ -1,6 +1,5 @@
-import { Component } from 'react';
 import PropTypes from 'prop-types';
-
+import { Component } from 'react';
 import { colors, shareLinks } from '../config';
 
 export default class ShareLink extends Component {
@@ -8,11 +7,11 @@ export default class ShareLink extends Component {
     type: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
     params: PropTypes.shape().isRequired,
-    transparent: PropTypes.bool
+    transparent: PropTypes.bool,
   };
 
   static defaultProps = {
-    transparent: false
+    transparent: false,
   };
 
   onClick = () => {
@@ -20,7 +19,7 @@ export default class ShareLink extends Component {
     const { width, height, url } = shareLinks[type];
     // eslint-disable-next-line prefer-template
     const popupUrl = `${url}?${Object.keys(params)
-      .map(key => `${key}=${encodeURIComponent(params[key])}`)
+      .map((key) => `${key}=${encodeURIComponent(params[key])}`)
       .join('&')}`;
 
     const popup = window.open(popupUrl, 'share', `width=${width},height=${height}`);
@@ -43,7 +42,7 @@ export default class ShareLink extends Component {
           className={`icon icon-${type}`}
           style={{
             background: transparent ? 'transparent' : null,
-            border: transparent ? '2px solid white' : null
+            border: transparent ? '2px solid white' : null,
           }}
         />
         <style jsx>{`

@@ -4,7 +4,7 @@ const { readdirSync } = require('fs');
 const { basename, extname } = require('path');
 const { execSync } = require('child_process');
 
-const execute = command => execSync(command.replace(/\s+/g, ' '));
+const execute = (command) => execSync(command.replace(/\s+/g, ' '));
 
 const root = `${__dirname}/../static/pics`;
 const srcPath = `${root}/o`;

@@ -1,7 +1,6 @@
-import PropTypes from 'prop-types';
-import Link from 'next/link';
 import classNames from 'classnames';
-
+import Link from 'next/link';
+import PropTypes from 'prop-types';
 import { colors } from '../config';
 
 const HeaderMenuItem = ({ href, text, title, iconName, isActive }) => (
@@ -88,7 +87,7 @@ HeaderMenuItem.propTypes = {
   text: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   iconName: PropTypes.string.isRequired,
-  isActive: PropTypes.bool.isRequired
+  isActive: PropTypes.bool.isRequired,
 };
 
 export default HeaderMenuItem;

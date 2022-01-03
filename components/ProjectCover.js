@@ -1,5 +1,4 @@
 import PropTypes from 'prop-types';
-
 import { domainUrl } from '../config';
 
 const ProjectCover = ({ slug, title }) => {
@@ -7,7 +6,7 @@ const ProjectCover = ({ slug, title }) => {
   const coverSrcSet = [
     `/static/pics/t/${slug}-cover-230.jpg 230w`,
     `/static/pics/t/${slug}-cover-460.jpg 460w`,
-    `${coverOriginalSrc} 980w`
+    `${coverOriginalSrc} 980w`,
   ].join(', ');
 
   return (
@@ -34,7 +33,7 @@ const ProjectCover = ({ slug, title }) => {
 
 ProjectCover.propTypes = {
   slug: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired
+  title: PropTypes.string.isRequired,
 };
 
 export default ProjectCover;

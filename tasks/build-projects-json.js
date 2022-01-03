@@ -13,7 +13,7 @@ const dstPath = `${root}/projects-json`;
 marked.setOptions({ smartypants: true });
 const renderer = new marked.Renderer();
 
-const buildImageRenderer = slug => (href, _title, text) => {
+const buildImageRenderer = (slug) => (href, _title, text) => {
   const prefix = `${slug}-${slugify(text)}`;
   const thumbnailPrefix = `/static/pics/t/${prefix}`;
   return (
@@ -63,7 +63,7 @@ readdirSync(srcPath)
     const gallery = buildPictureGallery(slug, content.body);
 
     const body = marked(content.body.replace(/:::pics/gim, '<div class="pics">').replace(/pics:::/gim, '</div>'), {
-      renderer
+      renderer,
     });
 
     writeFileSync(
@@ -71,7 +71,7 @@ readdirSync(srcPath)
       JSON.stringify({
         description,
         body,
-        gallery
+        gallery,
       })
     );
 

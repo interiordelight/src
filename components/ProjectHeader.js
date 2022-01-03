@@ -1,5 +1,4 @@
 import PropTypes from 'prop-types';
-
 import ProjectHeaderLink from './ProjectHeaderLink';
 import Title from './Title';
 
@@ -37,17 +36,17 @@ ProjectHeader.propTypes = {
   description: PropTypes.string.isRequired,
   prevProject: PropTypes.shape({
     slug: PropTypes.string,
-    title: PropTypes.string
+    title: PropTypes.string,
   }),
   nextProject: PropTypes.shape({
     slug: PropTypes.string,
-    title: PropTypes.string
-  })
+    title: PropTypes.string,
+  }),
 };
 
 ProjectHeader.defaultProps = {
   prevProject: null,
-  nextProject: null
+  nextProject: null,
 };
 
 export default ProjectHeader;

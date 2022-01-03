@@ -5,7 +5,7 @@ const PictureGallerySlide = ({ file }) => (
     <div
       className="pic"
       style={{
-        backgroundImage: `url(/static/pics/o/${file})`
+        backgroundImage: `url(/static/pics/o/${file})`,
       }}
     />
     <style jsx>{`
@@ -28,7 +28,7 @@ const PictureGallerySlide = ({ file }) => (
 );
 
 PictureGallerySlide.propTypes = {
-  file: PropTypes.string.isRequired
+  file: PropTypes.string.isRequired,
 };
 
 export default PictureGallerySlide;

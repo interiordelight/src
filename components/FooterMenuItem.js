@@ -1,6 +1,5 @@
-import PropTypes from 'prop-types';
 import Link from 'next/link';
-
+import PropTypes from 'prop-types';
 import { colors } from '../config';
 
 const FooterMenuItem = ({ href, text, title }) => (
@@ -46,7 +45,7 @@ const FooterMenuItem = ({ href, text, title }) => (
 FooterMenuItem.propTypes = {
   href: PropTypes.string.isRequired,
   text: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired
+  title: PropTypes.string.isRequired,
 };
 
 export default FooterMenuItem;

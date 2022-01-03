@@ -1,6 +1,5 @@
-import PropTypes from 'prop-types';
 import Link from 'next/link';
-
+import PropTypes from 'prop-types';
 import Card from './Card';
 
 const ProjectCard = ({ slug, title, color }) => {
@@ -63,7 +62,7 @@ const ProjectCard = ({ slug, title, color }) => {
 ProjectCard.propTypes = {
   slug: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
-  color: PropTypes.string.isRequired
+  color: PropTypes.string.isRequired,
 };
 
 export default ProjectCard;

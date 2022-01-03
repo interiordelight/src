@@ -1,7 +1,6 @@
 import PropTypes from 'prop-types';
-
-import HeaderMenuItem from './HeaderMenuItem';
 import { tagline } from '../config';
+import HeaderMenuItem from './HeaderMenuItem';
 
 const HeaderMenu = ({ activeItem }) => (
   <nav className="menu">
@@ -37,11 +36,11 @@ const HeaderMenu = ({ activeItem }) => (
 );
 
 HeaderMenu.propTypes = {
-  activeItem: PropTypes.string
+  activeItem: PropTypes.string,
 };
 
 HeaderMenu.defaultProps = {
-  activeItem: null
+  activeItem: null,
 };
 
 export default HeaderMenu;

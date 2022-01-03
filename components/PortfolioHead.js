@@ -20,5 +20,6 @@ export default () => (
       content="See my portfolio of professional interior design, decoration, visualization, 3D modeling, rendering and post-processing"
     />
     <meta property="og:type" content="article" />
+    <meta property="og:image" content={`${domainUrl}/static/images/interiordelight-og-image.jpg`} />
   </Head>
 );

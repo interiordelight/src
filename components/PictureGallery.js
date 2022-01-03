@@ -1,12 +1,11 @@
-import { Component } from 'react';
-import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import throttle from 'lodash.throttle';
-
-import PictureGalleryHeader from './PictureGalleryHeader';
-import PictureGalleryFooter from './PictureGalleryFooter';
-import PictureGallerySlide from './PictureGallerySlide';
+import PropTypes from 'prop-types';
+import { Component } from 'react';
 import { gallery as galleryConfig } from '../config';
+import PictureGalleryFooter from './PictureGalleryFooter';
+import PictureGalleryHeader from './PictureGalleryHeader';
+import PictureGallerySlide from './PictureGallerySlide';
 
 const { slideSpeed, wheelThrottle } = galleryConfig;
 
@@ -21,13 +20,13 @@ export default class PictureGallery extends Component {
     pictures: PropTypes.arrayOf(PropTypes.string).isRequired,
     events: PropTypes.shape({
       on: PropTypes.func,
-      removeListener: PropTypes.func
-    }).isRequired
+      removeListener: PropTypes.func,
+    }).isRequired,
   };
 
   state = {
     isOpen: false,
-    currentSlideSrc: ''
+    currentSlideSrc: '',
   };
 
   throttledPrevSlide = throttle(
@@ -119,7 +118,7 @@ export default class PictureGallery extends Component {
     this.slider.slideTo(this.props.pictures.indexOf(src));
   };
 
-  renderPicture = file => <PictureGallerySlide key={file} file={file} />;
+  renderPicture = (file) => <PictureGallerySlide key={file} file={file} />;
 
   render() {
     const { projectSlug, projectTitle, pictures } = this.props;

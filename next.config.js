@@ -6,7 +6,7 @@ const pathMap = {
   '/contact': { page: '/contact' },
   '/terms-and-conditions': { page: '/terms-and-conditions' },
   '/cookie-policy': { page: '/cookie-policy' },
-  '/portfolio': { page: '/portfolio' }
+  '/portfolio': { page: '/portfolio' },
 };
 
 projects.forEach((project) => {
@@ -15,5 +15,5 @@ projects.forEach((project) => {
 });
 
 module.exports = {
-  exportPathMap: () => pathMap
+  exportPathMap: () => pathMap,
 };

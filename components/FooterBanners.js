@@ -1,5 +1,5 @@
-import FooterBanner from './FooterBanner';
 import { colors } from '../config';
+import FooterBanner from './FooterBanner';
 
 export default () => (
   <div className="container">

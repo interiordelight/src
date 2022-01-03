@@ -1,7 +1,6 @@
 import PropTypes from 'prop-types';
-
-import ShareLink from './ShareLink';
 import { domain, domainUrl } from '../config';
+import ShareLink from './ShareLink';
 
 const PictureGalleryFooter = ({ projectSlug, projectTitle, currentSlideSrc }) => (
   <div className="container">
@@ -12,7 +11,7 @@ const PictureGalleryFooter = ({ projectSlug, projectTitle, currentSlideSrc }) =>
       params={{
         url: `${domainUrl}/portfolio/${projectSlug}/`,
         media: `${domainUrl}/static/pics/o/${currentSlideSrc}`,
-        description: `Picture from ${projectTitle} project by ${domain}.`
+        description: `Picture from ${projectTitle} project by ${domain}.`,
       }}
     />
     <style jsx>{`
@@ -38,7 +37,7 @@ const PictureGalleryFooter = ({ projectSlug, projectTitle, currentSlideSrc }) =>
 PictureGalleryFooter.propTypes = {
   projectSlug: PropTypes.string.isRequired,
   projectTitle: PropTypes.string.isRequired,
-  currentSlideSrc: PropTypes.string.isRequired
+  currentSlideSrc: PropTypes.string.isRequired,
 };
 
 export default PictureGalleryFooter;

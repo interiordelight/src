@@ -1,9 +1,8 @@
 import Head from 'next/head';
-
-import Layout from '../components/Layout';
-import Hero from '../components/Hero';
 import ContactLink from '../components/ContactLink';
-import { domainUrl, colors } from '../config';
+import Hero from '../components/Hero';
+import Layout from '../components/Layout';
+import { colors, domainUrl } from '../config';
 
 export default () => (
   <Layout title="Contact" activeMenuItem="contact" showFooterBanners>
@@ -65,9 +64,9 @@ export default () => (
               'sameAs': [
                 'https://www.behance.net/iflorescu',
                 'https://www.facebook.com/interiordelight.cc',
-                'https://linkedin.com/in/iriflorescu'
-              ]
-            })
+                'https://linkedin.com/in/iriflorescu',
+              ],
+            }),
           }}
         />
         <hr className="large separator" />
@@ -90,9 +89,9 @@ export default () => (
               'sameAs': [
                 'https://github.com/icflorescu',
                 'https://linkedin.com/in/icflorescu',
-                'https://www.facebook.com/icflorescu'
-              ]
-            })
+                'https://www.facebook.com/icflorescu',
+              ],
+            }),
           }}
         />
       </div>

@@ -21,11 +21,11 @@ const Content = ({ backgroundColor, children }) => (
 
 Content.propTypes = {
   backgroundColor: PropTypes.string,
-  children: PropTypes.node.isRequired
+  children: PropTypes.node.isRequired,
 };
 
 Content.defaultProps = {
-  backgroundColor: null
+  backgroundColor: null,
 };
 
 export default Content;

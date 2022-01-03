@@ -1,11 +1,11 @@
-import { Component } from 'react';
 import PropTypes from 'prop-types';
+import { Component } from 'react';
 
 export default class PictureGalleryHeaderDot extends Component {
   static propTypes = {
     src: PropTypes.string.isRequired,
     currentSlideSrc: PropTypes.string.isRequired,
-    onDotClick: PropTypes.func.isRequired
+    onDotClick: PropTypes.func.isRequired,
   };
 
   onClick = () => {
@@ -21,7 +21,7 @@ export default class PictureGalleryHeaderDot extends Component {
         className="dot"
         style={{
           backgroundColor: isCurrent ? 'white' : null,
-          cursor: isCurrent ? 'default' : 'pointer'
+          cursor: isCurrent ? 'default' : 'pointer',
         }}
         onClick={isCurrent ? null : this.onClick}
       >

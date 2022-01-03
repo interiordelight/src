@@ -5,7 +5,7 @@ const Title = ({ text, textColor, underlineColor, itemProp }) => (
     <h3
       style={{
         color: textColor,
-        borderBottomColor: underlineColor
+        borderBottomColor: underlineColor,
       }}
       itemProp={itemProp}
     >
@@ -23,13 +23,13 @@ Title.propTypes = {
   text: PropTypes.string.isRequired,
   textColor: PropTypes.string,
   underlineColor: PropTypes.string,
-  itemProp: PropTypes.string
+  itemProp: PropTypes.string,
 };
 
 Title.defaultProps = {
   textColor: null,
   underlineColor: null,
-  itemProp: null
+  itemProp: null,
 };
 
 export default Title;

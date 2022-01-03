@@ -1,8 +1,7 @@
-import { Component } from 'react';
-import PropTypes from 'prop-types';
-import Link from 'next/link';
 import classNames from 'classnames';
-
+import Link from 'next/link';
+import PropTypes from 'prop-types';
+import { Component } from 'react';
 import { colors } from '../config';
 
 export default class ProjectHeaderLink extends Component {
@@ -10,12 +9,12 @@ export default class ProjectHeaderLink extends Component {
     type: PropTypes.oneOf(['prev', 'next']).isRequired,
     project: PropTypes.shape({
       slug: PropTypes.string,
-      title: PropTypes.string
-    })
+      title: PropTypes.string,
+    }),
   };
 
   static defaultProps = {
-    project: null
+    project: null,
   };
 
   state = { hover: false };
@@ -49,7 +48,7 @@ export default class ProjectHeaderLink extends Component {
           <i
             className={classNames('icon', {
               'icon-left': type === 'prev',
-              'icon-right': type === 'next'
+              'icon-right': type === 'next',
             })}
           />
           <style jsx>{`

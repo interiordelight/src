@@ -1,10 +1,10 @@
-import { Component } from 'react';
 import PropTypes from 'prop-types';
+import { Component } from 'react';
 
 export default class ProjectContent extends Component {
   static propTypes = {
     body: PropTypes.string.isRequired,
-    galleryEvents: PropTypes.shape({ emit: PropTypes.func }).isRequired
+    galleryEvents: PropTypes.shape({ emit: PropTypes.func }).isRequired,
   };
 
   componentDidMount() {

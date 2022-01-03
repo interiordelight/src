@@ -62,7 +62,7 @@ const FooterBanner = ({ code, name, tld }) => (
 FooterBanner.propTypes = {
   tld: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
-  code: PropTypes.string.isRequired
+  code: PropTypes.string.isRequired,
 };
 
 export default FooterBanner;

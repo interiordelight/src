@@ -1,5 +1,4 @@
 import PropTypes from 'prop-types';
-
 import { colors } from '../config';
 
 const title = "Let's talk";
@@ -46,7 +45,7 @@ const CallToAction = ({ children }) => (
 );
 
 CallToAction.propTypes = {
-  children: PropTypes.node.isRequired
+  children: PropTypes.node.isRequired,
 };
 
 export default CallToAction;

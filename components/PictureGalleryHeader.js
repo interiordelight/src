@@ -1,10 +1,8 @@
 import PropTypes from 'prop-types';
-
 import PictureGalleryHeaderDot from './PictureGalleryHeaderDot';
 
-const renderDot = (currentSlideSrc, onDotClick) => file => (
-  <PictureGalleryHeaderDot key={file} src={file} currentSlideSrc={currentSlideSrc} onDotClick={onDotClick} />
-);
+const renderDot = (currentSlideSrc, onDotClick) => (file) =>
+  <PictureGalleryHeaderDot key={file} src={file} currentSlideSrc={currentSlideSrc} onDotClick={onDotClick} />;
 
 const onCloseClick = () => history.back();
 
@@ -84,7 +82,7 @@ PictureGalleryHeader.propTypes = {
   projectTitle: PropTypes.string.isRequired,
   pictures: PropTypes.arrayOf(PropTypes.string).isRequired,
   currentSlideSrc: PropTypes.string.isRequired,
-  onDotClick: PropTypes.func.isRequired
+  onDotClick: PropTypes.func.isRequired,
 };
 
 export default PictureGalleryHeader;

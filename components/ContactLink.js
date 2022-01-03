@@ -1,5 +1,4 @@
 import PropTypes from 'prop-types';
-
 import { colors } from '../config';
 
 const ContactLink = ({ type, href, title, detail }) => (
@@ -66,11 +65,11 @@ ContactLink.propTypes = {
   type: PropTypes.string.isRequired,
   href: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
-  detail: PropTypes.string
+  detail: PropTypes.string,
 };
 
 ContactLink.defaultProps = {
-  detail: null
+  detail: null,
 };
 
 export default ContactLink;

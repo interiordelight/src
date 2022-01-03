@@ -1,8 +1,7 @@
 import PropTypes from 'prop-types';
-
+import { colors } from '../config';
 import HeaderLogo from './HeaderLogo';
 import HeaderMenu from './HeaderMenu';
-import { colors } from '../config';
 
 const Header = ({ activeMenuItem }) => (
   <header className="header">
@@ -30,11 +29,11 @@ const Header = ({ activeMenuItem }) => (
 );
 
 Header.propTypes = {
-  activeMenuItem: PropTypes.string
+  activeMenuItem: PropTypes.string,
 };
 
 Header.defaultProps = {
-  activeMenuItem: null
+  activeMenuItem: null,
 };
 
 export default Header;

@@ -1,9 +1,10 @@
-import Layout from '../components/Layout';
-import Hero from '../components/Hero';
-import Content from '../components/Content';
-import Title from '../components/Title';
-import ProjectCards from '../components/ProjectCards';
+import Head from 'next/head';
 import CallToAction from '../components/CallToAction';
+import Content from '../components/Content';
+import Hero from '../components/Hero';
+import Layout from '../components/Layout';
+import ProjectCards from '../components/ProjectCards';
+import Title from '../components/Title';
 import { domainUrl } from '../config';
 import projects from '../projects-json/index.json';
 
@@ -11,6 +12,9 @@ const featuredProjects = projects.slice(0, 4);
 
 export default () => (
   <Layout title="Interior design and visualization done right" activeMenuItem="home" showFooterBanners>
+    <Head>
+      <meta property="og:image" content={`${domainUrl}/static/images/interiordelight-og-image.jpg`} />
+    </Head>
     <Hero picture="coffee" text="See. Feel. Use. Enjoy.|Equally Important." />
     <Content>
       <Title text="Featured projects" />
@@ -76,8 +80,8 @@ export default () => (
           '@context': 'http://schema.org',
           '@type': 'Organization',
           'url': domainUrl,
-          'logo': `${domainUrl}/static/images/interior-delight-logo.png`
-        })
+          'logo': `${domainUrl}/static/images/interior-delight-logo.png`,
+        }),
       }}
     />
   </Layout>

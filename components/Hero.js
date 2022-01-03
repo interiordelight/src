@@ -1,16 +1,16 @@
-import { Component } from 'react';
 import PropTypes from 'prop-types';
+import { Component } from 'react';
 
 export default class Hero extends Component {
   static propTypes = {
     picture: PropTypes.string.isRequired,
     text: PropTypes.string,
-    children: PropTypes.node
+    children: PropTypes.node,
   };
 
   static defaultProps = {
     text: null,
-    children: null
+    children: null,
   };
 
   componentDidMount() {
@@ -39,7 +39,7 @@ export default class Hero extends Component {
         className="container"
         style={{
           backgroundImage: `url('/static/images/${picture}.jpg')`,
-          backgroundPositionY: this.backgroundPositionY || '100%'
+          backgroundPositionY: this.backgroundPositionY || '100%',
         }}
         ref={this.setRef}
       >
