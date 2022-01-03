@@ -1,34 +1,34 @@
 {
-  "name": "InteriorDelight.cc",
-  "start_url": "https://interiordelight.cc",
+  "name": "interiordelight",
+  "start_url": "https://interiordelight.github.io",
   "display": "standalone",
   "icons": [
     {
-      "src": "https://interiordelight.cc/static/icons/icon-36x36.png",
+      "src": "https://interiordelight.github.io/static/icons/icon-36x36.png",
       "sizes": "36x36",
       "type": "image/png",
       "density": 0.75
     },
     {
-      "src": "https://interiordelight.cc/static/icons/icon-48x48.png",
+      "src": "https://interiordelight.github.io/static/icons/icon-48x48.png",
       "sizes": "48x48",
       "type": "image/png",
       "density": 1
     },
     {
-      "src": "https://interiordelight.cc/static/icons/icon-72x72.png",
+      "src": "https://interiordelight.github.io/static/icons/icon-72x72.png",
       "sizes": "72x72",
       "type": "image/png",
       "density": 1.5
     },
     {
-      "src": "https://interiordelight.cc/static/icons/icon-96x96.png",
+      "src": "https://interiordelight.github.io/static/icons/icon-96x96.png",
       "sizes": "96x96",
       "type": "image/png",
       "density": 2
     },
     {
-      "src": "https://interiordelight.cc/static/icons/icon-144x144.png",
+      "src": "https://interiordelight.github.io/static/icons/icon-144x144.png",
       "sizes": "144x144",
       "type": "image/png",
       "density": 3
