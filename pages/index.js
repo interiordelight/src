@@ -14,6 +14,14 @@ export default () => (
   <Layout title="Interior design and visualization done right" activeMenuItem="home" showFooterBanners>
     <Head>
       <meta property="og:image" content={`${domainUrl}/static/images/interiordelight-og-image.jpg`} />
+      <meta
+        name="description"
+        content="Professional interior design, decoration, visualization, 3D modeling, rendering and post-processing"
+      />
+      <meta
+        property="og:description"
+        content="Professional interior design, decoration, visualization, 3D modeling, rendering and post-processing"
+      />
     </Head>
     <Hero picture="coffee" text="See. Feel. Use. Enjoy.|Equally Important." />
     <Content>
