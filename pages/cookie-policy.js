@@ -2,7 +2,6 @@ import Content from '../components/Content';
 import CookiePolicyHead from '../components/CookiePolicyHead';
 import Layout from '../components/Layout';
 import Title from '../components/Title';
-import { domain } from '../config';
 
 const title = 'Cookie Policy';
 

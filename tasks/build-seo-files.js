@@ -4,7 +4,7 @@ const pug = require('pug');
 const dstPath = `${__dirname}/../out`;
 const domainUrl = 'https://interiordelight.github.io';
 
-writeFileSync(`${dstPath}/robots.txt`, `User-agent: *\n${domainUrl}/sitemap.xml`);
+writeFileSync(`${dstPath}/robots.txt`, `User-agent: *\nSitemap:${domainUrl}/sitemap.xml`);
 
 const sitemapParams = {
   root: domainUrl,
