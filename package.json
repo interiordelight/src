@@ -1,6 +1,6 @@
 {
   "name": "interiordelight.github.io",
-  "version": "3.3.0",
+  "version": "3.3.1",
   "description": "Next.js application for interiordelight.ro",
   "main": "index.js",
   "private": true,
