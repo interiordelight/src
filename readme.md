@@ -1,6 +1,6 @@
-# InteriorDelight.cc
+# interiordelight.github.io
 
-[InteriorDelight.cc](https://interiordelight.cc), built with React/[Next.js](https://github.com/zeit/next.js/) and [exported](https://github.com/zeit/next.js/#static-html-export) to be statically hosted on GitHub Pages.
+[interiordelight.github.io](https://interiordelight.github.io), built with React/[Next.js](https://github.com/zeit/next.js/) and [exported](https://github.com/zeit/next.js/#static-html-export) to be statically hosted on GitHub Pages.
 
 ## Notes
 
@@ -8,10 +8,10 @@ Source code is available at [github.com/interiordelight/src](https://github.com/
 
 ## How-to
 
-Setup into `[current_dir]/interiordelight.cc`:
+Setup into `[current_dir]/interiordelight`:
 
-    git clone git@github.com:interiordelight/src.git interiordelight.cc
-    cd interiordelight.cc
+    git clone git@github.com:interiordelight/src.git interiordelight
+    cd interiordelight
     git clone git@github.com:interiordelight/interiordelight.github.io.git out
 
 Develop:
