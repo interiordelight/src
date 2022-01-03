@@ -2,7 +2,7 @@ const { readdirSync, writeFileSync } = require('fs');
 const pug = require('pug');
 
 const dstPath = `${__dirname}/../out`;
-const domainUrl = 'https://interiordelight.github.io/';
+const domainUrl = 'https://interiordelight.github.io';
 
 writeFileSync(`${dstPath}/robots.txt`, `User-agent: *\n${domainUrl}/sitemap.xml`);
 
