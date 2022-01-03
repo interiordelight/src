@@ -2,10 +2,10 @@ import { appName, domainUrl } from '../config';
 
 export default () => (
   <a
-    href="https://plus.google.com/+IrinelRamonaFlorescu?rel=author"
+    href="https://www.linkedin.com/in/iriflorescu/"
     rel="publisher noopener noreferrer"
     target="_blank"
-    title="See Google+ Profile"
+    title="See LinkedIn Profile"
   >
     <span itemScope itemProp="author" itemType="http://schema.org/Person">
       <span itemProp="name">Irinel-Ramona Florescu</span>

@@ -2,8 +2,7 @@ import Document, { Head, Main, NextScript } from 'next/document';
 // important: the styled-jsx module here must be the same version as the one included in next.js
 // eslint-disable-next-line import/no-extraneous-dependencies
 import flush from 'styled-jsx/server';
-
-import { appName, domain, colors, iconLinks } from '../config';
+import { appName, colors, domain, iconLinks } from '../config';
 import getItemType from '../utils/getItemType';
 
 export default class Doc extends Document {
@@ -17,7 +16,6 @@ export default class Doc extends Document {
     return (
       <html lang="en" itemScope itemType={this.props.itemType}>
         <Head>
-          <script async src="/static/ga.js" />
           <meta charSet="UTF-8" />
           <meta name="author" content="Ionut-Cristian Florescu" />
           <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
