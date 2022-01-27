@@ -1,24 +1,22 @@
-import { Component } from 'react';
-import PropTypes from 'prop-types';
-import sampleSize from 'lodash.samplesize';
 import EventEmitter from 'eventemitter3';
-
+import sampleSize from 'lodash.samplesize';
+import PropTypes from 'prop-types';
+import { Component } from 'react';
 import prune from 'underscore.string/prune';
-
-import Layout from '../components/Layout';
-import ProjectHead from '../components/ProjectHead';
-import Content from '../components/Content';
-import ProjectHeader from '../components/ProjectHeader';
-import Title from '../components/Title';
-import ProjectShareLinks from '../components/ProjectShareLinks';
-import ProjectCover from '../components/ProjectCover';
-import ProjectContent from '../components/ProjectContent';
-import ProjectPublisher from '../components/ProjectPublisher';
 import CallToAction from '../components/CallToAction';
+import Content from '../components/Content';
+import Layout from '../components/Layout';
 import PictureGallery from '../components/PictureGallery';
 import ProjectCards from '../components/ProjectCards';
+import ProjectContent from '../components/ProjectContent';
+import ProjectCover from '../components/ProjectCover';
+import ProjectHead from '../components/ProjectHead';
+import ProjectHeader from '../components/ProjectHeader';
+import ProjectPublisher from '../components/ProjectPublisher';
+import ProjectShareLinks from '../components/ProjectShareLinks';
+import Title from '../components/Title';
+import { colors, domainUrl } from '../config';
 import projects from '../projects-json/index.json';
-import { domainUrl, colors } from '../config';
 
 const randomKey = () => `${Date.now()}${Math.random()}`;
 
@@ -34,16 +32,16 @@ class Project extends Component {
       PropTypes.shape({
         slug: PropTypes.string,
         title: PropTypes.string,
-        color: PropTypes.string
+        color: PropTypes.string,
       })
     ).isRequired,
     prevProject: PropTypes.shape(),
-    nextProject: PropTypes.shape()
+    nextProject: PropTypes.shape(),
   };
 
   static defaultProps = {
     prevProject: null,
-    nextProject: null
+    nextProject: null,
   };
 
   static getInitialProps({ query: { slug } }) {
@@ -51,7 +49,10 @@ class Project extends Component {
     // eslint-disable-next-line global-require, import/no-dynamic-require
     const projectData = require(`../projects-json/${slug}.json`);
     // randomly pick 4 other projects
-    const otherProjects = sampleSize(projects.filter(p => p.index !== projectSummary.index), 4);
+    const otherProjects = sampleSize(
+      projects.filter((p) => p.index !== projectSummary.index),
+      4
+    );
     return { ...projectSummary, ...projectData, otherProjects };
   }
 

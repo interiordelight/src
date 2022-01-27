@@ -118,6 +118,7 @@ export default class PictureGallery extends Component {
     this.slider.slideTo(this.props.pictures.indexOf(src));
   };
 
+  // eslint-disable-next-line class-methods-use-this
   renderPicture = (file) => <PictureGallerySlide key={file} file={file} />;
 
   render() {

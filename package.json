@@ -16,10 +16,11 @@
     "deploy": "sh deploy.sh"
   },
   "dependencies": {
-    "babel-eslint": "^10.1.0",
+    "@babel/core": "^7.16.12",
+    "@babel/eslint-parser": "^7.5.4",
     "chokidar-cli": "^3.0.0",
     "classnames": "^2.3.1",
-    "eslint": "^8.6.0",
+    "eslint": "^8.7.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-import": "^2.25.4",
@@ -34,17 +35,17 @@
     "lodash.throttle": "^4.1.1",
     "lory.js": "^2.5.3",
     "marked": "0.3.19",
-    "mkdirp": "^0.5.1",
+    "mkdirp": "^0.5.5",
     "next": "^8.1.0",
     "npm-run-all": "^4.1.5",
-    "prop-types": "^15.8.0",
+    "prop-types": "^15.8.1",
     "pug": "^3.0.2",
-    "react": "^16.11.0",
-    "react-dom": "^16.11.0",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
     "rimraf": "^3.0.2",
-    "styled-jsx": "^4.0.1",
+    "styled-jsx": "3.2.1",
     "styled-jsx-plugin-stylus": "^0.0.4",
     "stylus": "^0.56.0",
-    "underscore.string": "^3.3.5"
+    "underscore.string": "^3.3.6"
   }
 }

@@ -22,6 +22,7 @@ export const colors = {
 };
 
 export const iconLinks = [
+  // eslint-disable-next-line react/no-invalid-html-attribute
   <link key="shortcut-icon" rel="shortcut icon" type="image/x-icon" href="/static/icons/favicon.ico" />,
   ...[32, 16, 36, 48, 72, 96, 144, 192].map((size) => (
     <link key={`icon-${size}`} rel="icon" type="image/png" href={`/static/icons/icon-${size}x${size}.png`} />

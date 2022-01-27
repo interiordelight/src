@@ -32,85 +32,87 @@ if (global.window) {
 }
 
 /* eslint-disable no-useless-escape */
-const Layout = ({ title, activeMenuItem, showFooterBanners, children }) => (
-  <div>
-    <Head>
-      <title>
-        {title} – {domain}
-      </title>
-    </Head>
-    <Header activeMenuItem={activeMenuItem} />
-    {children}
-    <Footer showBanners={showFooterBanners} />
-    <style jsx global>{`
-      body {
-        margin: 0;
-        background: ${colors.darkGray};
-        color: ${colors.text};
-        font: 16px/1.5 'Open Sans', sans-serif;
-      }
-
-      h3,
-      h4 {
-        font-weight: 400;
-        font-family: 'Poiret One', sans-serif;
-        text-transform: uppercase;
-      }
-
-      h3 {
-        font-size: 24px;
-        line-height: 1.33;
-        display: inline-block;
-        padding: 0 6px;
-        border-bottom: 2px solid ${colors.blue};
-        margin: 0 0 0.5em 0;
-      }
-
-      h4 {
-        font-size: 20px;
-        line-height: 1.5;
-        margin: 1em 0 0;
-      }
-
-      a {
-        color: ${colors.greenText};
-        &:hover {
-          color: ${colors.redText};
+function Layout({ title, activeMenuItem, showFooterBanners, children }) {
+  return (
+    <div>
+      <Head>
+        <title>
+          {title} – {domain}
+        </title>
+      </Head>
+      <Header activeMenuItem={activeMenuItem} />
+      {children}
+      <Footer showBanners={showFooterBanners} />
+      <style jsx global>{`
+        body {
+          margin: 0;
+          background: ${colors.darkGray};
+          color: ${colors.text};
+          font: 16px/1.5 'Open Sans', sans-serif;
         }
-      }
 
-      hr {
-        border: 0;
-        height: 2px;
-        background: ${colors.blue};
-      }
+        h3,
+        h4 {
+          font-weight: 400;
+          font-family: 'Poiret One', sans-serif;
+          text-transform: uppercase;
+        }
 
-      @media (min-width: 480px) {
         h3 {
-          font-size: 36px;
-          margin: 0.25em 0;
+          font-size: 24px;
+          line-height: 1.33;
+          display: inline-block;
+          padding: 0 6px;
+          border-bottom: 2px solid ${colors.blue};
+          margin: 0 0 0.5em 0;
         }
 
         h4 {
-          font-size: 28px;
-        }
-      }
-
-      @media (min-width: 1000px) {
-        h3 {
-          font-size: 52px;
+          font-size: 20px;
+          line-height: 1.5;
+          margin: 1em 0 0;
         }
 
-        h4 {
-          font-size: 36px;
+        a {
+          color: ${colors.greenText};
+          &:hover {
+            color: ${colors.redText};
+          }
         }
-      }
-    `}</style>
-    <style jsx global>
-      {icons}
-    </style>
-  </div>
-);
+
+        hr {
+          border: 0;
+          height: 2px;
+          background: ${colors.blue};
+        }
+
+        @media (min-width: 480px) {
+          h3 {
+            font-size: 36px;
+            margin: 0.25em 0;
+          }
+
+          h4 {
+            font-size: 28px;
+          }
+        }
+
+        @media (min-width: 1000px) {
+          h3 {
+            font-size: 52px;
+          }
+
+          h4 {
+            font-size: 36px;
+          }
+        }
+      `}</style>
+      <style jsx global>
+        {icons}
+      </style>
+    </div>
+  );
+}
 
 Layout.propTypes = {
   title: PropTypes.string.isRequired,

@@ -14,28 +14,30 @@ const projectListItemLdJson = ({ slug }, index) => ({
   'url': `${domainUrl}/portfolio/${slug}/`,
 });
 
-export default () => (
-  <Layout title="Portfolio" activeMenuItem="portfolio" showFooterBanners>
-    <PortfolioHead />
-    <Hero picture="interior-2" text="Art. Engineering. Economics.|Skilfully combined." />
-    <Content>
-      <Title text="Portfolio" />
-      <ProjectCards projects={projects} />
-      <CallToAction>
-        <hr />
-        <p>Need something done?</p>
-      </CallToAction>
-    </Content>
-    <script
-      type="application/ld+json"
-      // eslint-disable-next-line react/no-danger
-      dangerouslySetInnerHTML={{
-        __html: JSON.stringify({
-          '@context': 'http://schema.org',
-          '@type': 'ItemList',
-          'itemListElement': projects.map(projectListItemLdJson),
-        }),
-      }}
-    />
-  </Layout>
-);
+export default function PortfolioPage() {
+  return (
+    <Layout title="Portfolio" activeMenuItem="portfolio" showFooterBanners>
+      <PortfolioHead />
+      <Hero picture="interior-2" text="Art. Engineering. Economics.|Skilfully combined." />
+      <Content>
+        <Title text="Portfolio" />
+        <ProjectCards projects={projects} />
+        <CallToAction>
+          <hr />
+          <p>Need something done?</p>
+        </CallToAction>
+      </Content>
+      <script
+        type="application/ld+json"
+        // eslint-disable-next-line react/no-danger
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'http://schema.org',
+            '@type': 'ItemList',
+            'itemListElement': projects.map(projectListItemLdJson),
+          }),
+        }}
+      />
+    </Layout>
+  );
+}

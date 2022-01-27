@@ -1,27 +1,29 @@
 import PropTypes from 'prop-types';
 
-const Card = ({ children }) => (
-  <div className="container">
-    {children}
-    <style jsx>{`
-      .container {
-        flex: 0 0 auto;
-        width: 50%;
-        box-sizing: border-box;
-        padding: 10px;
+function Card({ children }) {
+  return (
+    <div className="container">
+      {children}
+      <style jsx>{`
+        .container {
+          flex: 0 0 auto;
+          width: 50%;
+          box-sizing: border-box;
+          padding: 10px;
 
-        @media (min-width: 768px) {
-          width: 25%;
-        }
+          @media (min-width: 768px) {
+            width: 25%;
+          }
 
-        /* quite improbable */
-        @media (max-width: 350px) {
-          width: 100%;
+          /* quite improbable */
+          @media (max-width: 350px) {
+            width: 100%;
+          }
         }
-      }
-    `}</style>
-  </div>
-);
+      `}</style>
+    </div>
+  );
+}
 
 Card.propTypes = {
   children: PropTypes.node.isRequired,

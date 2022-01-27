@@ -2,7 +2,7 @@ import Link from 'next/link';
 import PropTypes from 'prop-types';
 import Card from './Card';
 
-const ProjectCard = ({ slug, title, color }) => {
+function ProjectCard({ slug, title, color }) {
   const picPrefix = `/static/pics/t/${slug}-cover`;
   return (
     <Card>
@@ -57,7 +57,7 @@ const ProjectCard = ({ slug, title, color }) => {
       `}</style>
     </Card>
   );
-};
+}
 
 ProjectCard.propTypes = {
   slug: PropTypes.string.isRequired,

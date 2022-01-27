@@ -6,7 +6,7 @@ const renderOgSeeAlsoProject = (project) => (
   <meta key={project.index} property="og:see_also" content={`${domainUrl}/portfolio/${project.slug}/`} />
 );
 
-const ProjectHead = ({ slug, title, description, otherProjects }) => {
+function ProjectHead({ slug, title, description, otherProjects }) {
   const absoluteCoverUrl = `${domainUrl}/static/pics/o/${slug}-cover.jpg`;
   return (
     <Head>
@@ -22,7 +22,7 @@ const ProjectHead = ({ slug, title, description, otherProjects }) => {
       {otherProjects.map(renderOgSeeAlsoProject)}
     </Head>
   );
-};
+}
 
 ProjectHead.propTypes = {
   slug: PropTypes.string.isRequired,

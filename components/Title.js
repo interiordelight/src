@@ -1,23 +1,25 @@
 import PropTypes from 'prop-types';
 
-const Title = ({ text, textColor, underlineColor, itemProp }) => (
-  <div className="container">
-    <h3
-      style={{
-        color: textColor,
-        borderBottomColor: underlineColor,
-      }}
-      itemProp={itemProp}
-    >
-      {text}
-    </h3>
-    <style jsx>{`
-      .container {
-        text-align: center;
-      }
-    `}</style>
-  </div>
-);
+function Title({ text, textColor, underlineColor, itemProp }) {
+  return (
+    <div className="container">
+      <h3
+        style={{
+          color: textColor,
+          borderBottomColor: underlineColor,
+        }}
+        itemProp={itemProp}
+      >
+        {text}
+      </h3>
+      <style jsx>{`
+        .container {
+          text-align: center;
+        }
+      `}</style>
+    </div>
+  );
+}
 
 Title.propTypes = {
   text: PropTypes.string.isRequired,

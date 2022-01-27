@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import { domainUrl } from '../config';
 
-const ProjectCover = ({ slug, title }) => {
+function ProjectCover({ slug, title }) {
   const coverOriginalSrc = `/static/pics/o/${slug}-cover.jpg`;
   const coverSrcSet = [
     `/static/pics/t/${slug}-cover-230.jpg 230w`,
@@ -29,7 +29,7 @@ const ProjectCover = ({ slug, title }) => {
       `}</style>
     </div>
   );
-};
+}
 
 ProjectCover.propTypes = {
   slug: PropTypes.string.isRequired,
