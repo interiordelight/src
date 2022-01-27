@@ -27,14 +27,13 @@ if (global.window) {
   require('next/router').default.onRouteChangeComplete = (url) => {
     // just for consistency, since this doesn't really matter on the client side
     htmlEl.setAttribute('itemType', getItemType(url));
-    global.ga('send', 'pageview', url);
   };
 }
 
 /* eslint-disable no-useless-escape */
 function Layout({ title, activeMenuItem, showFooterBanners, children }) {
   return (
-    <div>
+    <>
       <Head>
         <title>
           {title} – {domain}
@@ -110,7 +109,7 @@ function Layout({ title, activeMenuItem, showFooterBanners, children }) {
       <style jsx global>
         {icons}
       </style>
-    </div>
+    </>
   );
 }
 
