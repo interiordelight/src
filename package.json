@@ -28,7 +28,7 @@
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.28.0",
     "eventemitter3": "^4.0.7",
-    "express": "^4.17.2",
+    "express": "^4.17.3",
     "front-matter": "^4.0.2",
     "lazysizes": "^5.3.2",
     "lodash.samplesize": "^4.2.0",
